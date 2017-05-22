@@ -1,5 +1,7 @@
 # Contributing to Mozilla IAM repositories
 
+This file is maintained at https://github.com/mozilla-iam/mozilla-iam/blob/master/CONTRIBUTING.md
+
 ## Terminology
 | Shortcut | Term                  | Meaning                                                                                                                            |
 |----------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------|
