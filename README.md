@@ -22,8 +22,8 @@ See also the [press statement](Press.md) (this is not a real press-statement, it
 ### Discussion
 - Discourse public, main board: https://discourse.mozilla-community.org/c/iam (iam@mozilla-community.org)
 - Discourse STAFF CONFIDENTIAL board: https://discourse.mozilla-community.org/c/iam/internal (iam+internal@mozilla-community.org) - only use when strictly necessary
-- IRC: irc://irc.mozilla.org/iam
 - Slack: https://mozilla.slack.com/messages/G606LM42Y/
+- Slack automated messages/bots/statuses: https://mozilla.slack.com/messages/G92LX4J3T/
 
 ## About the GitHub organization setup
 This organization has been created to hold IAM-related public repositories. These repositories are public.
@@ -34,4 +34,4 @@ Access control needs to be tigher than on https://www.github.com/mozilla/ (main 
 This repository tracks all issues that do not have a GitHub repository assigned (such as non-code, code without repo, etc.)
 
 ## Contact
-For more information, please contact Mozilla Infosec: https://wiki.mozilla.org/Security/InfoSec
+For more information, please contact Mozilla Infosec: https://infosec.mozilla.org/
