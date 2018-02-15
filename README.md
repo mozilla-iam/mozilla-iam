@@ -12,14 +12,30 @@ See also the [press statement](Press.md) (this is not a real press-statement, it
 
 ![Diagram](/imgs/diagram.png?raw=true "High-level diagram")
 
-## Links and information
-### Internal links
+# Concepts
+
+## 2 Stage Access validation
+
+Mozilla IAM validates identity using one or more factors. It also validates authorization, or access using at one or
+more authorization stages.
+The common case is a user account access behind verified by the access provider at a high-level using broad groups or
+roles. The RP (Relying Party) will then perform the same or/and additional verification, which may allow specific access within the
+application.
+
+Ex: A reviewer may have a 'Staff' role and granted access at the first stage verification. The reviewer then gets access
+to the reviewer features in the application, an access which is granted by the 2nd stage verification (i.e. RP
+verification).
+
+![2stages](/imgs/2stageaccess.png?raw=true "2 Stages Access Diagram")
+
+# Links and information
+## Internal links
 - [Mozilla internal "mana" page](https://mana.mozilla.org/wiki/display/SECURITY/IAM)
 - [GDrive](https://drive.google.com/drive/folders/0BxL62r-99fkxYU92VnlHRlMyYkU)
 - [Decision log](https://docs.google.com/spreadsheets/d/1QqJBLg6tTMUj_8VyPMEZOdsiumSzAwdZ-J-SpJsaEqs/edit#gid=0)
 - [Roadmap](https://app.productplan.com/xonua5Ar)
 
-### Discussion
+## Discussion
 - Discourse public, main board: https://discourse.mozilla-community.org/c/iam (iam@mozilla-community.org)
 - Discourse STAFF CONFIDENTIAL board: https://discourse.mozilla-community.org/c/iam/internal (iam+internal@mozilla-community.org) - only use when strictly necessary
 - Slack: https://mozilla.slack.com/messages/G606LM42Y/
