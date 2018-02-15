@@ -16,14 +16,14 @@ See also the [press statement](Press.md) (this is not a real press-statement, it
 
 ## 2 Stage Access validation
 
-Mozilla IAM validates identity using one or more factors. It also validates authorization, or access using at one or
+Mozilla IAM validates identity using one or more factors. It also validates authorization, or access, using at one or
 more authorization stages.
-The common case is a user account access behind verified by the access provider at a high-level using broad groups or
+The common case is a user account's access behind verified by the access provider at a high-level using broad groups or
 roles. The RP (Relying Party) will then perform the same or/and additional verification, which may allow specific access within the
 application.
 
-Ex: A reviewer may have a 'Staff' role and granted access at the first stage verification. The reviewer then gets access
-to the reviewer features in the application, an access which is granted by the 2nd stage verification (i.e. RP
+Ex: A reviewer may have a 'Staff' role and is granted access at the first stage verification. The reviewer then gets access
+to the reviewer features in the application, access which is granted by the 2nd stage verification (i.e. RP
 verification).
 
 ![2stages](/imgs/2stageaccess.png?raw=true "2 Stages Access Diagram")
