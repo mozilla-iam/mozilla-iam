@@ -50,4 +50,4 @@ Access control needs to be tigher than on https://www.github.com/mozilla/ (main 
 This repository tracks all issues that do not have a GitHub repository assigned (such as non-code, code without repo, etc.)
 
 ## Contact
-For more information, please contact Mozilla Infosec: https://infosec.mozilla.org/
+For more information, please contact Mozilla Infosec (https://infosec.mozilla.org/) or the Open Innovation Team (https://wiki.mozilla.org/Innovation).
