@@ -31,13 +31,13 @@ verification).
 # Links and information
 ## Internal links
 - [Mozilla internal "mana" page](https://mana.mozilla.org/wiki/display/SECURITY/IAM)
-- [GDrive](https://drive.google.com/drive/folders/0BxL62r-99fkxYU92VnlHRlMyYkU)
+- [GDrive (Team Drive)](https://drive.google.com/drive/folders/0ALdo9L7TEaCgUk9PVA)
 - [Decision log](https://docs.google.com/spreadsheets/d/1QqJBLg6tTMUj_8VyPMEZOdsiumSzAwdZ-J-SpJsaEqs/edit#gid=0)
 - [Roadmap](https://app.productplan.com/xonua5Ar)
 
 ## Discussion
 - Discourse public, main board: https://discourse.mozilla-community.org/c/iam (iam@mozilla-community.org)
-- Discourse STAFF CONFIDENTIAL board: https://discourse.mozilla-community.org/c/iam/internal (iam+internal@mozilla-community.org) - only use when strictly necessary
+- Discourse MOZILLA CONFIDENTIAL board: https://discourse.mozilla-community.org/c/iam/internal (iam+internal@mozilla-community.org) - only use when strictly necessary
 - Slack: https://mozilla.slack.com/messages/G606LM42Y/
 - Slack automated messages/bots/statuses: https://mozilla.slack.com/messages/G92LX4J3T/
 
