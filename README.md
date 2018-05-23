@@ -28,6 +28,23 @@ verification).
 
 ![2stages](/imgs/2stageaccess.png?raw=true "2 Stages Access Diagram")
 
+## Automatic expiration of access
+
+Mozilla IAM records a timestamp of the last successful login to any RP (Relying Party) during the user's login. The
+timestamp is tied to the RP.
+With this, Mozilla IAM is able to tell the date at which an RP was last accessed by a user.
+Automatic expiration of access is the method by which Mozilla IAM use the timestamp to decide if the user should
+retain access, regardless of any other access control mechanism. If the timestamp is older than a certain amount of time
+(such as 6 month), then the access will be denied and the user will have to ask for the access to be re-enabled.
+
+This method is useful in environments where group-based or role-based access cannot always be well managed, and where
+keeping track of which group gives access where, what user should have access is difficult. In other word, this method
+implements a logic of "use it or lose it" automatically.
+
+Note: The access validation occurs as part of the "2 Stage Access validation" concept.
+
+![expirationofaccess](/imgs/expirationofaccess.png?raw=true "Expiration of access diagram")
+
 # Links and information
 ## Internal links
 - [Mozilla internal "mana" page](https://mana.mozilla.org/wiki/display/SECURITY/IAM)
