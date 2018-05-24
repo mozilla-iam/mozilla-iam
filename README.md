@@ -41,7 +41,7 @@ This method is useful in environments where group-based or role-based access can
 keeping track of which group gives access where, what user should have access is difficult. In other word, this method
 implements a logic of "use it or lose it" automatically.
 
-Note: The access validation occurs as part of the "2 Stage Access validation" concept.
+Note: The access validation occurs as part of the "2 Stage Access validation" concept and is not meant as a replacement for group-based and role-based access control.
 
 ![expirationofaccess](/imgs/expirationofaccess.png?raw=true "Expiration of access diagram")
 
