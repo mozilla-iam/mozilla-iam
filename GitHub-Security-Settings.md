@@ -19,7 +19,7 @@ An "org owner" may add users to teams. The teams should have a description which
 
 - No user may be added to teams that will be given universal `write` access to all repository by default.
 - Teams **must** be created in order to give **granular** access to repositories. In particular:
-  - If a user does not merge code in a repository, the user should be in a team that is not able to merge code for that repository.
+  - IIf a user does not need permission to merge code in a repository, the user should be in a team that is not able to merge code for that repository.
   - Single "collaborators" should not be added, teams are to be used instead. Teams are very visible and described at the organization level, while collaborators are less visible and there is no information on their role.
 
 ### Organization Settings
