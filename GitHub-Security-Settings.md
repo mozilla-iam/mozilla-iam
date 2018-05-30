@@ -3,7 +3,7 @@
 This documents which settings are used for Mozilla IAM repositories, and why.
 All repositories created should follow the rules established here unless otherwise stated.
 
-See also (CONTRIBUTING.md)[CONTRIBUTING.md] for more information about contributing code to Mozilla IAM repositories. 
+See also [CONTRIBUTING.md](CONTRIBUTING.md) for more information about contributing code to Mozilla IAM repositories. 
 
 ## mozilla-iam GitHub organization owners
 
@@ -48,7 +48,7 @@ Each subsequent paragraph represents one settings section.
 
 ### Branches
 
-- There should be a `master` and `production` branch setup at the minimum (see also (CONTRIBUTING.md)[CONTRIBUTING.md]).
+- There should be a `master` and `production` branch setup at the minimum (see also [CONTRIBUTING.md](CONTRIBUTING.md)).
 - Branch Protection Rules on these branches **must** be set as follow (settings that are not indicated here are up to you):
   - [x] Protect this branch
   - [x] Require pull request reviews before merging
