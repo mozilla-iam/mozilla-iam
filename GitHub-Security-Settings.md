@@ -49,7 +49,7 @@ Each subsequent paragraph represents one settings section.
 ### Branches
 
 - There should be a `master` and `production` branch setup at the minimum (see also (CONTRIBUTING.md)[CONTRIBUTING.md]).
-- Branch Protection Rules **must** be set as follow (settings that are not indicated here are up to you):
+- Branch Protection Rules on these branches **must** be set as follow (settings that are not indicated here are up to you):
   - [x] Protect this branch
   - [x] Require pull request reviews before merging
   - [x] Require signed commits
