@@ -39,7 +39,6 @@ Because Mozilla IAM may only be aware of more secure methods being available for
 
 Ex: User first login with "passwordless" authentication (least secure) with email `xxx@example.net`. The user then later login with Firefox Accounts /w 2FA enabled as `xxx@example.net` which is more secure. Because both use the same (primary) email, Mozilla IAM will rachete the login, i.e. force the user to login with Firefox Account for every subsequent attempt.
 
-
 ## Open ID Connect (OIDC)
 
 OpenID Connect, one of the main standards for authentication on the web. It is a layer on top of OAuth2. See also the [Infosec website](https://infosec.mozilla.org/guidelines/iam/openid_connect) for more information.
@@ -56,7 +55,10 @@ Person API is the API in front of CIS. It allows access to the user profile data
 
 ### Rules
 
-Rules that we write that allow or disallow certain login behaviours with Auth0, for example: 
+Auth0 rule engine is a serverless-based rule execution engine. It uses [webtask](https://www.webtask.io).
+Auth0 rules run at login time (i.e. when the user logs in) and perform several checks and operations, which may result in the user being denied or granted authentication, among other things.
+
+We store Auth0 [rules in a GitHub repository](https://github.com/mozilla-iam/auth0-deploy).
 
 ### Connection
 
