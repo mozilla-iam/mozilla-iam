@@ -8,49 +8,85 @@ This file is maintained at https://github.com/mozilla-iam/mozilla-iam/blob/maste
 | POC      | Proof of concept      | A repository with proof of concepts, or basically anything that does not contain production code and is not yet being reviewed.    |
 | PR       | Pull-Request          | A request to merge commits/code into a repository.                                                                                 |
 | r+ r-    | Review granted/denied | A Mozilla shortcut to mention that a code review resulted in the acceptance or refusal of the code.                                |
-| Branch   | Branch                |  A branch is a view of the repository's commit history. `master` is the development branch, `production` is the production branch. |
-   
-## Code quality
-Code quality/review is really deep in our culture here in Mozilla and should **not** be treated as a nice to have.
+| Branch   | Branch                | A branch is a view of the repository's commit history. `master` is the development branch, `production` is the production branch.  |
+| Tag      | Tag                   | A tag is a known point in the repository's commit history. It's used to mark specific releases.                                    |
 
-### Branches
-Each repository should have:
-* A `master` branch that is used for development, setup in such as way that pull-requests are required to add commits. Reviews are optional for proof of concepts, but required on any repository that also has a production branch.
+See also [GLOSSARY.md](GLOSSARY.md) for more definitions.
 
-* An optional `staging` branch. This branch is used to test deployments only.
+## Principles
 
-* A `production` branch. This branch is optional for proof of concept repositories, but otherwise required. Pull-requests and reviews are required to commit to this branch, and must be enforced by GitHub settings. PRs to the `production` branch must come from the same repository's branches (usually, from `master`).
+All IAM repositories should follow these working agreements and include:
+
+1. A master branch which is tagged for releases.
+2. The settings documented in [GitHub-Security-Settings.md](GitHub-Security-Settings.md) are set for all repositories.
+3. Code contains some level of unit testing.
+4. Testing includes a linter or syntax analyzer such as `flake8`
+5. A README which indicates the project's purpose and a diagram of functionment.
+6. The code can always be tested locally without any credentials.
+7. Use `makefiles` with clear targets to build, run, deploy the code.
+8. No un-reviewed code may go to production.
+9. Code is developed on personal forks and merged back to the repositories under <https://github.com/mozilla-iam> or
+  <https://github.com/mozilla>.
+10. New design or large functionality changes must go through an
+  [RRA](https://infosec.mozilla.org/guidelines/risk/rapid_risk_assessment.html).
+11. Pentests should be run periodically for high risk projects.
+
+### Branches, tags, and pull-requests
+
+* The `master` branch is used for development, and tags are created to mark point in time releases. These releases may
+  be promoted to a production deploy.
+
+* Additional branches may be created (including a `production` branch, but these should serve as a way to work on a
+project with multiple people, not as personal branches. Use your own fork of the project for personal work or feature
+you work on alone. If this changes, you can always push the personal branch to the upstream repository).
+
+* Proof of concepts do not require review, unless they're promoted to production code.
 
 Life of a commit:
 ```
 
- Personal       Pull-Req     mozilla-iam      Pull-Req        mozilla-iam        Pull-Req        mozilla-iam
- Fork/Repos    +--------->   master branch  +------------->   staging branch   +-------------->  production branch
-                                                               (optional)
-                      ^                              ^                                ^
-                      |                              |                                |
-                      |                              |                                |
-                      + Review required   +-------------------------------------------+
-                        Except POC repos
+ Personal       Pull-Req     mozilla-iam      Tag
+ Fork/Repos    +--------->   master branch  +----------> version 1.0
+                      ^                              ^
+                      |                              |
+                      |                              |
+                      + Review required   +----------+
+                        Except POC or configuration repos
+```
+
+This is the recommended way to setup your local fork:
+
+#### Manually
+```
+# Fork the project on github first!
+$ git clone git@github.com:your-name-here/mozilla-iam.git
+$ cd mozilla-iam
+$ git remote add upstream https://github.com/mozilla-iam/mozilla-iam
+$ git branch -u master upstream/master # Tracks upstream in case it changes
+```
+
+#### Automatically
+```
+$ git clone https://github.com/mozilla-iam/mozilla-iam
+$ cd mozilla-iam
+$ hub fork
+# Note that here, `origin` is upstream, and the remote with your github username is your fork
+```
+
+To update:
+```
+$ git pull -r upstream master
+# Or
+$ git pull -r your-name-here master
+# Note that `-r` will rebase your local changes on top of upstream if you have any
+# To avoid having to do so you can also just always work on a local branch
 ```
 
 ### Code reviews
-The purpose of doing reviews is not to check if code changes work (this should be ensured by the dev before opening the PR) but rather deep dive on the implementation and to ensure that code standards/policies are met.
 
-Here are some guidelines that we recommend to also follow:
-* https://mozweb.readthedocs.io/en/latest/1
+* Always check the guidelines from this document are met, i.e. that principles are followed (is there any unit test? is
+  there documentation? etc.)
+* Look at the code flow and attempt to find any logical errors. You do not need to verify the code will run, but instead
+  if there are any high level issue, or things the developer did not think of.
 
-
-### Pull-requests (PR)
-
-* PRs should deal with one specific issue. Several PRs should be opened when dealing with multiple issues.
-* PRs should reference the issue(s) that required this PR.
-* If commits for the same change are spread over several commits due to development, reviews, etc. it is acceptable to squash the commits on merge during a PR.
-* An attempt to make commits reasonably atomic (one type of change per commit) should be made.
-* Commit messages should be reasonably clear, for example: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
-        
-        
-### Push
-
-Push is only allowed for POC repos. Any repos with a `production` branch should therefore disable push to branches in the GitHub settings.
-`push -f` is strongly discouraged unless absolutely necessary (even on POC repos) - and if so, forks and authors should be consulted to ensure this is the best solution.
+See also: <https://mozweb.readthedocs.io> for a longer read on good practices.
