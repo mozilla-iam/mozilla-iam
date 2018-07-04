@@ -5,7 +5,7 @@
 High level service and product owners for Mozilla IAM.
 
 * Capability owner: @jeffbryner
-  * Mozilla IAM Product owner: @gdestuynder
+  * Product owner: @gdestuynder
     * Auth0 & Auth0 Lock & Auth0 Dashboard: @jdow @akrug @gdestuynder
     * Service Integration (CIS): @akrug
     * LDAP: @jdow
@@ -13,11 +13,13 @@ High level service and product owners for Mozilla IAM.
     * Mozillians.org: @hmitsch
     * WorkDay: HRIS
 
-Architects:
+## Architects
+
 * @gdestuynder (IAM, Security)
 * @mvk-mozilla (IT)
 
-Program Managers:
+## Program Managers
+
 * @hmitsch
 
 # Modules owners
