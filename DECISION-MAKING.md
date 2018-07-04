@@ -33,11 +33,11 @@ system](https://wiki.mozilla.org/Modules) as well as
 
 Backend which deals with IAM data integration from multiple sources.
 
-Owner (accountable, decision maker): @akrug
-Peers: @gdestuynder
-Operator: EIS
-Consulted: @akatsoulas @johngian @fiji-flo
-Informed: N/A
+- Owner (accountable, decision maker): @akrug
+- Peers: @gdestuynder
+- Operator: EIS
+- Consulted: @akatsoulas @johngian @fiji-flo
+- Informed: N/A
 
 Repositories:
 - https://github.com/mozilla-iam/cis
@@ -47,11 +47,11 @@ Repositories:
 
 API which presents and allow manipulation of CIS data.
 
-Owner (accountable, decision maker): @akrug
-Peers: @gdestuynder
-Operator: EIS
-Consulted: @akatsoulas @johngian @fiji-flo TaskCluster Bugzilla
-Informed: All relying parties and https://discourse.mozilla-community.org/c/iam
+- Owner (accountable, decision maker): @akrug
+- Peers: @gdestuynder
+- Operator: EIS
+- Consulted: @akatsoulas @johngian @fiji-flo TaskCluster Bugzilla
+- Informed: All relying parties and https://discourse.mozilla-community.org/c/iam
 
 
 Repository:
@@ -61,11 +61,11 @@ Repository:
 
 This is https://sso.mozilla.com
 
-Owner (accountable, decision maker): @akrug
-Peers: @gdestuynder
-Operator: EIS
-Consulted: @mbranson @hidde
-Informed: @jeffbryner @hmitsch and https://discourse.mozilla-community.org/c/iam
+- Owner (accountable, decision maker): @akrug
+- Peers: @gdestuynder
+- Operator: EIS
+- Consulted: @mbranson @hidde
+- Informed: @jeffbryner @hmitsch and https://discourse.mozilla-community.org/c/iam
 
 Repository:
 - https://github.com/mozilla-iam/sso-dashboard
@@ -74,11 +74,11 @@ Repository:
 
 This is the configuration and `apps.yml`.
 
-Owner (accountable, decision maker): @jdow
-Peers: @akrug @gdestuynder
-Operator: EIS
-Consulted: N/A
-Informed: N/A
+- Owner (accountable, decision maker): @jdow
+- Peers: @akrug @gdestuynder
+- Operator: EIS
+- Consulted: N/A
+- Informed: N/A
 
 Repository:
 - https://github.com/mozilla-iam/sso-dashboard-configuration
@@ -87,11 +87,11 @@ Repository:
 
 This is the team drive integration.
 
-Owner (accountable, decision maker): @akrug
-Peers: @gdestuynder
-Operator: EIS
-Consulted: @hmitsch
-Informed: https://discourse.mozilla-community.org/c/iam
+- Owner (accountable, decision maker): @akrug
+- Peers: @gdestuynder
+- Operator: EIS
+- Consulted: @hmitsch
+- Informed: https://discourse.mozilla-community.org/c/iam
 
 Repository:
 - https://github.com/mozilla-iam/gsuite-community-drive-driver
@@ -100,11 +100,11 @@ Repository:
 
 This is the Slack deprovisioning driver.
 
-Owner (accountable, decision maker): @gdestuynder
-Peers: @akrug
-Operator: EIS
-Consulted: @jhayashi @jeffbryner
-Informed: N/A
+- Owner (accountable, decision maker): @gdestuynder
+- Peers: @akrug
+- Operator: EIS
+- Consulted: @jhayashi @jeffbryner
+- Informed: N/A
 
 Repository:
 - https://github.com/mozilla-iam/slack-driver/
@@ -113,11 +113,11 @@ Repository:
 
 This is the login window for Mozilla IAM.
 
-Owner (accountable, decision maker): @hidde
-Peers: @akrug @gdestuynder
-Operator: EIS
-Consulted: @mbranson @hmitsch
-Informed: https://discourse.mozilla-community.org/c/iam
+- Owner (accountable, decision maker): @hidde
+- Peers: @akrug @gdestuynder
+- Operator: EIS
+- Consulted: @mbranson @hmitsch
+- Informed: https://discourse.mozilla-community.org/c/iam
 
 Repository:
 - https://github.com/mozilla-iam/auth0-custom-lock
@@ -126,11 +126,11 @@ Repository:
 
 This is https://www.mozillians.org which manages profiles, groups, etc.
 
-Owner (accountable, decision maker): @hmitsch
-Peers: @johngian @akatsoulas @fiji-flo
-Operator: Parsys
-Consulted: @mbranson
-Informed: https://discourse.mozilla-community.org/c/iam
+- Owner (accountable, decision maker): @hmitsch
+- Peers: @johngian @akatsoulas @fiji-flo
+- Operator: Parsys
+- Consulted: @mbranson
+- Informed: https://discourse.mozilla-community.org/c/iam
 
 Repository:
 - https://github.com/mozilla/mozillians
@@ -139,11 +139,11 @@ Repository:
 
 This is https://phonebook.mozilla.org
 
-Owner (accountable, decision maker): @akrug
-Peers: @atoll
-Operator: IT
-Consulted: N/A
-Informed: https://discourse.mozilla-community.org/c/iam
+- Owner (accountable, decision maker): @akrug
+- Peers: @atoll
+- Operator: IT
+- Consulted: N/A
+- Informed: https://discourse.mozilla-community.org/c/iam
 
 Repository:
 - https://github.com/mozilla/phonebook
