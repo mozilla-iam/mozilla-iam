@@ -32,8 +32,14 @@ This document list which team or persons are responsible for which component (mo
 a more detailed model.
 
 This is mainly useful for decision making and is loosely following the [Firefox Module
-system](https://wiki.mozilla.org/Modules) as well as
-[RACI](https://en.wikipedia.org/wiki/Responsibility_assignment_matrix).
+system](https://wiki.mozilla.org/Modules).
+
+- **Owner**: A single person which is accountable for the module and normally the final decision maker. In case there is
+  serious disagreement, the Service owner, Product owner, or Capability owner can still be consulted. The Capability
+  owner has final say on all decisions.
+- **Peers**: List of persons which can act on behalf of the Owner, in case the owner is unavailable.
+- **Operator**: A single person or team which is responsible for keeping the system running, generally also the
+  developer in a devops model.
 
 ## CIS (Change Integration Service)
 
