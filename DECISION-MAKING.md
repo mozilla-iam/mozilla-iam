@@ -22,6 +22,10 @@ High level service and product owners for Mozilla IAM.
 
 * @hmitsch
 
+## User Experience (UX)
+
+* @mbranson
+
 # Modules owners
 
 This document list which team or persons are responsible for which component (module) of the Mozilla IAM stack. This is
