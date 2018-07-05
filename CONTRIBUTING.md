@@ -42,7 +42,7 @@ you work on alone. If this changes, you can always push the personal branch to t
 
 * Proof of concepts do not require review, unless they're promoted to production code.
 
-Life of a commit:
+Life of a commit (*note, if using a specific production branch, the same lifecycle is to be followed*):
 ```
 
  Personal       Pull-Req     mozilla-iam      Tag
@@ -58,7 +58,7 @@ This is the recommended way to setup your local fork:
 
 #### Manually
 ```
-# Fork the project on github first!
+# Fork the project on GitHub first!
 $ git clone git@github.com:your-name-here/mozilla-iam.git
 $ cd mozilla-iam
 $ git remote add upstream https://github.com/mozilla-iam/mozilla-iam
@@ -70,7 +70,7 @@ $ git branch -u master upstream/master # Tracks upstream in case it changes
 $ git clone https://github.com/mozilla-iam/mozilla-iam
 $ cd mozilla-iam
 $ hub fork
-# Note that here, `origin` is upstream, and the remote with your github username is your fork
+# Note that here, `origin` is upstream, and the remote with your GitHub username is your fork
 ```
 
 To update:
