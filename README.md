@@ -50,7 +50,7 @@ Note: The access validation occurs as part of the "2 Stage Access validation" co
 - [Mozilla internal "mana" page](https://mana.mozilla.org/wiki/display/SECURITY/IAM)
 - [GDrive (Team Drive)](https://drive.google.com/drive/folders/0ALdo9L7TEaCgUk9PVA)
 - [Decision log](https://docs.google.com/spreadsheets/d/1QqJBLg6tTMUj_8VyPMEZOdsiumSzAwdZ-J-SpJsaEqs/edit#gid=0)
-- [Roadmap](https://app.productplan.com/xonua5Ar)
+- [Roadmap](https://app.productplan.com/JRWijnVX#)
 
 ## Discussion
 - Discourse public, main board: https://discourse.mozilla-community.org/c/iam (iam@mozilla-community.org)
