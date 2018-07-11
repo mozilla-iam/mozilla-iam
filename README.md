@@ -12,6 +12,12 @@ See also the [press statement](Press.md) (this is not a real press-statement, it
 
 ![Diagram](/imgs/diagram.png?raw=true "High-level diagram")
 
+# Diagrams
+
+- [Login flows](imgs/login_flows.png) shows how login and account verification work from a visual, high level point of
+  view.
+
+
 # Concepts
 
 ## 2 Stage Access validation
