@@ -14,7 +14,9 @@ See also the [press statement](Press.md) (this is not a real press-statement, it
 
 # Diagrams
 
-- [Login flows](imgs/login_flows.png) shows how login and account verification work from a visual, high level point of
+- [Technical Diagram of Mozilla IAM](imgs/technical_architecture_diagram.svg?raw=true) High-level technical diagram of the
+  different Mozilla IAM components and their interactions. It has more technical details.
+- [Login flows](imgs/login_flows.png?raw=true) shows how login and account verification work from a visual, high level point of
   view.
 
 
