@@ -49,7 +49,7 @@ Note: The access validation occurs as part of the "2 Stage Access validation" co
 ## Internal links
 - [Mozilla internal "mana" page](https://mana.mozilla.org/wiki/display/SECURITY/IAM) This contains some internal processes and some legacy documentation.
 - [GDrive (Team Drive)](https://drive.google.com/drive/folders/0ALdo9L7TEaCgUk9PVA) This contains internal research docs and meeting notes.
-- [Roadmap](https://app.productplan.com/xonua5Ar) A visual representation of where we're going.
+- [Roadmap](https://app.productplan.com/p/WZ5WEuTxpjVjxuPQ2IvlCys0WnXZVSJ2)
 - [Decision making](DECISION-MAKING.md) Who's responsible for ultimately making decisions and who's accountable for these.
 - [Decision log](https://docs.google.com/spreadsheets/d/1QqJBLg6tTMUj_8VyPMEZOdsiumSzAwdZ-J-SpJsaEqs/edit#gid=0) A log of past decisions that seemed important.
 - [CONTRIBUTING](CONTRIBUTING.md) A list of principles that we go by when participating to the Mozilla IAM project.
