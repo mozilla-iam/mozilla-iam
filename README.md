@@ -14,9 +14,19 @@ See also the [press statement](Press.md) (this is not a real press-statement, it
 
 # Diagrams
 
-- [Technical Diagram of Mozilla IAM](imgs/technical_architecture_diagram.svg?raw=true) High-level technical diagram of the
-  different Mozilla IAM components and their interactions. It has more technical details.
-- [Login flows](imgs/login_flows.png?raw=true) shows how login and account verification work from a visual, high level point of
+<!--
+We use a direct link below so that SVG is correctly rendered. This is an unfortunate hack, but allows us to use SVG
+so that the user can zoom-in/out the diagram, which is much nicer than with a PNG.
+Note that this is because GitHub will otherwise serve SVG as plain-text (ie in raw form) to avoid possible security
+issues with SVG script tags for example. The alternative is to use the GitHub wiki rendering, but we're not using this
+here.
+This also mean this link will *only* work if the main repo has the file.
+-->
+- [Technical Diagram of Mozilla
+  IAM](https://raw.githubusercontent.com/mozilla-iam/mozilla-iam/master/imgs/technical_architecture_diagram.svg?sanitize=true) High-level
+  technical diagram of the different Mozilla IAM components and their interactions. It has more technical details.
+- [Login flows](imgs/login_flows.png?raw=true) shows how login and account verification work from a visual, high level
+  point of
   view.
 
 
