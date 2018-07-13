@@ -1,53 +1,35 @@
 `Last update: 2018-07`
 
-# Service owners
+# _Mozilla IAM_ Modules Owners
 
-High level service and product owners for Mozilla IAM.
+This document list which team or people are **responsible for making decisions** by service or component (module) of _Mozilla IAM_. This is inspired by [Mozilla's Module System](https://wiki.mozilla.org/Modules). This list is useful to expedite decisions. It does not mean that a module owner is the sole authority for the module, but it is the "go-to" person. In the module owner absence, module peers may also make decisions on behalf of the module owner.
 
-* Capability owner: @jeffbryner
-  * Product owner: @gdestuynder
-    * Auth0 & Auth0 Lock & Auth0 Dashboard: @jdow @akrug @gdestuynder
-    * Service Integration (CIS): @akrug
-    * LDAP: @jdow
-    * DuoSecurity: @gdestuynder
-    * Mozillians.org: @hmitsch
-    * WorkDay: HRIS
+All decisions are taken by consulting various parties of different teams in and outside of Mozilla.
 
-## Architects
+## UX (User Experience)
 
-* @gdestuynder (IAM, Security)
-* @mvk-mozilla (IT)
+User flow, design, etc.
 
-## Program Managers
+- Module Owner: @mbranson
+- Peers: Rina
 
-* @hmitsch
+## Django OIDC
 
-## User Experience (UX)
+A Python Django module providing OpenID Connect (OIDC) support for relying parties, used by multiple sites.
 
-* @mbranson
+- Module Owner: @johngian
+- Peers: @akatsoulas
 
-# Modules owners
-
-This document list which team or persons are responsible for which component (module) of the Mozilla IAM stack. This is
-a more detailed model.
-
-This is mainly useful for decision making and is loosely following the [Firefox Module
-system](https://wiki.mozilla.org/Modules).
-
-- **Owner**: A single person which is accountable for the module and normally the final decision maker. In case there is
-  serious disagreement, the Service owner, Product owner, or Capability owner can still be consulted. The Capability
-  owner has final say on all decisions.
-- **Peers**: List of persons which can act on behalf of the Owner, in case the owner is unavailable.
-- **Operator**: A single person or team which is responsible for keeping the system running, generally also the
-  developer in a devops model.
+Repositories:
+- https://github.com/mozilla/mozilla-django-oidc/
 
 ## CIS (Change Integration Service)
 
 Backend which deals with IAM data integration from multiple sources.
 
-- Owner (accountable, decision maker): @akrug
+- Module Owner: @akrug
 - Peers: @gdestuynder
-- Operator (responsible, developer): EIS
+- Operator: EIS
 
 Repositories:
 - https://github.com/mozilla-iam/cis
@@ -55,89 +37,110 @@ Repositories:
 
 ## Person API
 
-API which presents and allow manipulation of CIS data.
+API which presents and allows manipulation of CIS data. This includes a publicly available endpoint to _Mozilla IAM_ (replacing the Mozillians.org API).
 
-- Owner (accountable, decision maker): @akrug
-- Peers: @gdestuynder
-- Operator (responsible, developer): EIS
-
+- Owner: @akrug
+- Peers: @gdestuynder <can we add a ParSys Peer?>
+- Operator: EIS
 
 Repository:
 - https://github.com/mozilla-iam/person-api
 
 ## SSO Dashboard
 
-This is https://sso.mozilla.com
+This is the application launcher available at https://sso.mozilla.com.
 
-- Owner (accountable, decision maker): @akrug
+- Owner: @akrug
 - Peers: @gdestuynder
-- Operator (responsible, developer): EIS
+- Operator: EIS
 
 Repository:
 - https://github.com/mozilla-iam/sso-dashboard
 
-## SSO Dashboard configuration and access control database
+## SSO Dashboard Configuration and Access Control Database
 
 This is the configuration and `apps.yml`.
 
-- Owner (accountable, decision maker): @jdow
+- Owner: @jdow
 - Peers: @akrug @gdestuynder
-- Operator (responsible, developer): EIS
+- Operator: EIS
 
 Repository:
 - https://github.com/mozilla-iam/sso-dashboard-configuration
 
 ## GSuite Community Driver
 
-This is the team drive integration.
+This is the G Suite Team Drive integration.
 
-- Owner (accountable, decision maker): @akrug
+- Owner: @akrug
 - Peers: @gdestuynder
-- Operator (responsible, developer): EIS
+- Operator: EIS
 
 Repository:
 - https://github.com/mozilla-iam/gsuite-community-drive-driver
 
 ## Slack Driver
 
-This is the Slack deprovisioning driver.
+This is the driver for Slack user deprovisioning.
 
-- Owner (accountable, decision maker): @gdestuynder
+- Owner: @gdestuynder
 - Peers: @akrug
-- Operator (responsible, developer): EIS
+- Operator: EIS
 
 Repository:
 - https://github.com/mozilla-iam/slack-driver/
 
 ## New Login Experience (NLX)
 
-This is the login window for Mozilla IAM.
+This is the login window for _Mozilla IAM_.
 
-- Owner (accountable, decision maker): @hidde
+- Owner: @hidde
 - Peers: @akrug @gdestuynder
-- Operator (responsible, developer): EIS
+- Operator: EIS
 
 Repository:
 - https://github.com/mozilla-iam/auth0-custom-lock
 
-## Mozillians.org profile editor
+## Mozillians.org Profile and Group Management
 
-This is https://www.mozillians.org which manages profiles, groups, etc.
+This is the place to edit _Mozilla IAM_ profiles, manage groups, search & discover people. It is available at https://mozillians.org.
 
-- Owner (accountable, decision maker): @hmitsch
+- Owner: @hmitsch
 - Peers: @johngian @akatsoulas @fiji-flo
-- Operator (responsible, developer): Parsys
+- Operator: ParSys
 
 Repository:
 - https://github.com/mozilla/mozillians
 
 ## Phonebook
 
-This is https://phonebook.mozilla.org
+This is the Staff-only accessible system to access Mozilla's org chart and Staff profiles, available at https://phonebook.mozilla.org.
 
-- Owner (accountable, decision maker): @akrug
+- Owner: @akrug
 - Peers: @atoll
-- Operator (responsible, developer): IT
+- Operator: IT
 
 Repository:
 - https://github.com/mozilla/phonebook
+
+## IAM Infrastructure
+
+- Owner (accountable, decision maker): TBD
+- Peers: @danielh (infra) @adelbarrio (monitoring&alerting) @akrug @johngian
+- Operator (responsible, developer): IT (MOC?)
+
+## OpenLDAP
+
+This is the Staff user database, credential storage and group system (IdP). It also contains some non-staff contributors.
+
+- Owner: @jdow
+- Peers: TBD
+- Operator: EIS
+
+## DuoSecurity (2FA)
+
+This is the 2FA/MFA product utilized to augment OpenLDAP with a second-factor.
+
+- Owner: @gdestuynder
+- Peers: @jeffbryner
+- Operator: Third party (Duo)
