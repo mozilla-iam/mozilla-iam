@@ -129,10 +129,6 @@ Repository:
 - Peers: @danielh (infra) @adelbarrio (monitoring&alerting) @akrug @johngian
 - Operator (responsible, developer): IT (MOC?)
 
-Repository:
-- TBD (infrastructure)
-- TBD (monitoring&alerting)
-
 ## OpenLDAP
 
 This is the Staff user database, credential storage and group system (IdP). It also contains some non-staff contributors.
