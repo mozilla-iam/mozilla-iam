@@ -2,7 +2,16 @@
 
 # _Mozilla IAM_ Modules Owners
 
-This document list which team or people are responsible for making decision by service or component (module) of _Mozilla IAM_. This is inspired by [Mozilla's Module System](https://wiki.mozilla.org/Modules).
+This document list which team or people are **responsible for making decisions** by service or component (module) of _Mozilla IAM_. This is inspired by [Mozilla's Module System](https://wiki.mozilla.org/Modules). This list is useful to expedite decisions. It does not mean that a module owner is the sole authority for the module, but it is the "go-to" person. In the module owner absence, module peers may also make decisions on behalf of the module owner.
+
+All decisions are taken by consulting various parties of different teams in and outside of Mozilla.
+
+## UX (User Experience)
+
+User flow, design, etc.
+
+- Module Owner: @mbranson
+- Peers: Rina
 
 ## CIS (Change Integration Service)
 
