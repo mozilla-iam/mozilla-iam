@@ -13,6 +13,16 @@ User flow, design, etc.
 - Module Owner: @mbranson
 - Peers: Rina
 
+## Django OIDC
+
+A Python Django module providing OpenID Connect (OIDC) support for relying parties, used by multiple sites.
+
+- Module Owner: @johngian
+- Peers: @akatsoulas
+
+Repositories:
+- https://github.com/mozilla/mozilla-django-oidc/
+
 ## CIS (Change Integration Service)
 
 Backend which deals with IAM data integration from multiple sources.
