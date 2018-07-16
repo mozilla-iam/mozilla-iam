@@ -56,10 +56,14 @@ Note: The access validation occurs as part of the "2 Stage Access validation" co
 
 # Links and information
 ## Internal links
-- [Mozilla internal "mana" page](https://mana.mozilla.org/wiki/display/SECURITY/IAM)
-- [GDrive (Team Drive)](https://drive.google.com/drive/folders/0ALdo9L7TEaCgUk9PVA)
-- [Decision log](https://docs.google.com/spreadsheets/d/1QqJBLg6tTMUj_8VyPMEZOdsiumSzAwdZ-J-SpJsaEqs/edit#gid=0)
+- [Mozilla internal "mana" page](https://mana.mozilla.org/wiki/display/SECURITY/IAM) This contains some internal processes and some legacy documentation.
+- [GDrive (Team Drive)](https://drive.google.com/drive/folders/0ALdo9L7TEaCgUk9PVA) This contains internal research docs and meeting notes.
 - [Roadmap](https://app.productplan.com/p/WZ5WEuTxpjVjxuPQ2IvlCys0WnXZVSJ2)
+- [Decision making](DECISION-MAKING.md) Who's responsible for ultimately making decisions and who's accountable for these.
+- [Decision log](https://docs.google.com/spreadsheets/d/1QqJBLg6tTMUj_8VyPMEZOdsiumSzAwdZ-J-SpJsaEqs/edit#gid=0) A log of past decisions that seemed important.
+- [CONTRIBUTING](CONTRIBUTING.md) A list of principles that we go by when participating to the Mozilla IAM project.
+  - [GitHub Security Settings](GitHub-Security-Settings.md) How our repositories are setup in GitHub, and why.
+- [GLOSSARY](GLOSSARY.md) A list of terms that are commonly used in this project, with their definition or explanation.
 
 ## Discussion
 - Discourse public, main board: https://discourse.mozilla-community.org/c/iam (iam@mozilla-community.org)
