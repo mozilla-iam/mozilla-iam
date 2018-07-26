@@ -1,4 +1,5 @@
-# Table of contents
+# Deratcheting user flows
+## Table of contents
 
 - [User logs in with Temporary IdP](#user-logs-in-with-temporary-idp)
 - [User succeeds at logging into RP with AAL](#user-succeeds-at-logging-into-rp-with-aal)
