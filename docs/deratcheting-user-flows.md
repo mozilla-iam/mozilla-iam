@@ -158,20 +158,20 @@ sequenceDiagram
 
 * GitHub returns profile of user to Auth0
     * `email=fulan@example.com`
-* Auth0 creates a new profile for this new GitHub user
+* Auth0 creates a new profile for this new GitHub user. Now that this new profile exists, searches for profiles done after this point in the rules will return this brand new profile.
 * Does the Auth0 profile contain any additional profiles in the `identities` list indicating that the user's GitHub Auth0 profile is linked to something
     * No, the `identities` list contains only the GitHub profile
 * Search for all user profiles in Auth0 where `email=fulan@example.com`
     * One result is returned, the user profile with `user_id` of `github|123456` that was just now created when the user logged in
 * Was one result returned?
     * Yes, allow the user to log in to the RP
-    * `user_id` is `github|123456`
+    * `user_id` sent to the RP is `github|123456`
 
 ### User logs in with second IdP for the first time
 
 * GitHub returns profile of user to Auth0
     * `email=fulan@example.com`
-* Auth0 creates a new profile for this new GitHub user
+* Auth0 creates a new profile for this new GitHub user. Now that this new profile exists, searches for profiles done after this point in the rules will return this brand new profile.
 * Does the Auth0 profile contain any additional profiles in the `identities` list indicating that the user's GitHub Auth0 profile is linked to something
     * No, the `identities` list contains only the GitHub profile
 * Search for all user profiles in Auth0 where `email=fulan@example.com`
@@ -185,7 +185,7 @@ sequenceDiagram
     * Call the `/api/v2/users/ad|mozilla-ldap|fulan@example.com/identities` Auth0 endpoint to link the GitHub profile to whatever the other returned profile is, in this case LDAP, and set it (LDAP) as primary
         * Pass this to the endpoint `{user_id: github|123456}`
     * Allow the user to log in to the RP
-    * `user_id` is `ad|mozilla-ldap|fulan@example.com`
+    * `user_id` sent to the RP is `ad|mozilla-ldap|fulan@example.com`
 
 ### User logs in with second IdP for a second time
 
@@ -196,13 +196,13 @@ sequenceDiagram
     * Yes, the `identities` list contains the GitHub profile and an LDAP profile
     * LDAP is primary because the `user_id` is `ad|mozilla-ldap|fulan@example.com` not `github|123456`
     * Allow the user to login to the RP
-    * `user_id` is `ad|mozilla-ldap|fulan@example.com`
+    * `user_id` sent to the RP is `ad|mozilla-ldap|fulan@example.com`
 
 ### User logs in with third IdP and the first two are already linked
 
 * GitHub returns profile of user to Auth0
     * `email=fulan@example.com`
-* Auth0 creates a new profile for this new GitHub user
+* Auth0 creates a new profile for this new GitHub user. Now that this new profile exists, searches for profiles done after this point in the rules will return this brand new profile.
 * Does the Auth0 profile contain any additional profiles in the `identities` list indicating that the user's GitHub Auth0 profile is linked to something
     * No, the `identities` list contains only the GitHub profile
 * Search for all user profiles in Auth0 where `email=fulan@example.com`
@@ -219,7 +219,7 @@ sequenceDiagram
         * Pass this to the endpoint `{user_id: github|123456}`
     * The result is that now both the GitHub profile and the existing Google profile are linked to the LDAP profile which is primary
     * Allow the user to login to the RP
-    * `user_id` is `ad|mozilla-ldap|fulan@example.com`
+    * `user_id` sent to the RP is `ad|mozilla-ldap|fulan@example.com`
 
 ### User logs in with third IdP for the first time and the other two are not linked
 
@@ -247,7 +247,7 @@ sequenceDiagram
 
 * Firefox Accounts returns profile of user to Auth0
     * `email=fulan@example.com`
-* Auth0 creates a new profile for this new Firefox Accounts user
+* Auth0 creates a new profile for this new Firefox accounts user. Now that this new profile exists, searches for profiles done after this point in the rules will return this brand new profile.
 * Does the Auth0 profile contain any additional profiles in the `identities` list indicating that the user's Firefox Accounts Auth0 profile is linked to something
     * No, the `identities` list contains only the Firefox Accounts profile
 * Search for all user profiles in Auth0 where `email=fulan@example.com`
@@ -274,7 +274,7 @@ sequenceDiagram
         * Call the `/api/v2/users/github|123456/identities` Auth0 endpoint to link the Google profile to the profile determined to be the primary via ratcheting, in this case GitHub, and set it (GitHub) as primary
             * Pass this to the endpoint `{user_id: google-oauth2|789123}`
         * Allow the user to login to the RP
-            * `user_id` is `github|123456`
+            * `user_id` sent to the RP is `github|123456`
 
 ### User logs in with third IdP that they've used before and the other two are not linked
 
@@ -305,5 +305,5 @@ sequenceDiagram
         * Call the `/api/v2/users/oauth2|firefox-accounts|456123/identities` Auth0 endpoint to link the Google profile to the profile determined to be the primary via ratcheting, in this case Firefox Accounts, and set it (Firefox Accounts) as primary
             * Pass this to the endpoint `{user_id: google-oauth2|789123}`
         * Allow the user to login to the RP
-            * `user_id` is `oauth2|firefox-accounts|456123`
+            * `user_id` sent to the RP is `oauth2|firefox-accounts|456123`
 
