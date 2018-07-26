@@ -1,7 +1,5 @@
 # User logs in with Temporary IdP
 
-<!---
-
 ```mermaid
 sequenceDiagram
     participant User
@@ -25,13 +23,9 @@ sequenceDiagram
     Note over User,RP: {<br/>"sub":"33782750-eff3-4241-bfb1@te<br/>mporary.invalid.identifier", "email":"33782750-eff3-4241-bfb1@t<br/>emporary.invalid.identifier"<br/>}
 ```
 
--->
-
 ![Deratcheting Temporary IdP](https://github.com/gene1wood/mozilla-iam/raw/master/imgs/deratcheting_temporary_idp.svg)
 
 # User succeeds at logging into RP with AAL
-
-<!---
 
 ```mermaid
 sequenceDiagram
@@ -50,7 +44,6 @@ sequenceDiagram
     GitHub-->>User:Redirect to Auth0
     User->>Auth0:Redirect to Auth0
 ```
--->
 
 ![Deratcheting Login Success with AAL](https://github.com/gene1wood/mozilla-iam/raw/master/imgs/deratcheting_login_success_aal.svg)
 
@@ -76,7 +69,6 @@ sequenceDiagram
 
 # User fails to log into RP with AAL
 
-<!---
 ```mermaid
 sequenceDiagram
     participant User
@@ -94,7 +86,6 @@ sequenceDiagram
     GitHub-->>User:Redirect to Auth0
     User->>Auth0:Redirect to Auth0
 ```
--->
 
 ![Deratcheting Login Failure with AAL](https://github.com/gene1wood/mozilla-iam /raw/master/imgs/deratcheting_login_failure_aal.svg)
 
@@ -120,7 +111,6 @@ sequenceDiagram
 
 # Account Linking
 
-<!---
 ```mermaid
 sequenceDiagram
     participant User
@@ -139,7 +129,6 @@ sequenceDiagram
     User->>Auth0:Redirect to Auth0
     Note over Auth0: Auth0 Rules
 ```
--->
 
 ![Deratcheting Account Linking](https://github.com/gene1wood/mozilla-iam /raw/master/imgs/deratcheting_account_linking.svg)
 
@@ -212,8 +201,6 @@ sequenceDiagram
 
 ## User logs in with third IdP for the first time and the other two are not linked
 
-<!---
-
 ```mermaid
 sequenceDiagram
     participant User
@@ -232,7 +219,6 @@ sequenceDiagram
     User->>Auth0:Redirect to Auth0
     Note over Auth0: Auth0 Rules
 ```
--->
 
 ![Deratcheting Account Linking with third IdP](https://github.com/gene1wood/mozilla-iam /raw/master/imgs/deratcheting_account_linking_third_idp.svg)
 
