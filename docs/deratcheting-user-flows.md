@@ -59,6 +59,7 @@ sequenceDiagram
     Note over GitHub: User logs in to<br/>GitHub and provides<br/>MFA OTP
     GitHub-->>User:Redirect to Auth0
     User->>Auth0:Redirect to Auth0
+    Note over Auth0: Auth0 Rules execute (see rules below)
 ```
 
 ![Deratcheting Login Success with AAL](../imgs/deratcheting_login_success_aal.svg)
@@ -102,6 +103,7 @@ sequenceDiagram
     Note over GitHub: User logs in to<br/>GitHub and does not provide<br/>MFA OTP
     GitHub-->>User:Redirect to Auth0
     User->>Auth0:Redirect to Auth0
+    Note over Auth0: Auth0 Rules execute (see rules below)
 ```
 
 ![Deratcheting Login Failure with AAL](../imgs/deratcheting_login_failure_aal.svg)
@@ -146,6 +148,7 @@ sequenceDiagram
     GitHub-->>User:Redirect to Auth0
     User->>Auth0:Redirect to Auth0
     Note over Auth0: Auth0 Rules
+    Note over Auth0: Auth0 Rules execute (see rules below)
 ```
 
 ![Deratcheting Account Linking](../imgs/deratcheting_account_linking.svg)
@@ -236,7 +239,7 @@ sequenceDiagram
     Note over FxA: User logs into FxA
     FxA-->>User:Redirect to Auth0
     User->>Auth0:Redirect to Auth0
-    Note over Auth0: Auth0 Rules
+    Note over Auth0: Auth0 Rules execute (see rules below)
 ```
 
 ![Deratcheting Account Linking with third IdP](../imgs/deratcheting_account_linking_third_idp.svg)
