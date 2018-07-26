@@ -1,4 +1,19 @@
-# User logs in with Temporary IdP
+# Deratcheting user flows
+## Table of contents
+
+- [User logs in with Temporary IdP](#user-logs-in-with-temporary-idp)
+- [User succeeds at logging into RP with AAL](#user-succeeds-at-logging-into-rp-with-aal)
+- [User fails to log into RP with AAL](#user-fails-to-log-into-rp-with-aal)
+- [Account linking](#account-linking)
+- [User logs in with the Mozilla IAM system for the first time](#user-logs-in-with-the-mozilla-iam-system-for-the-first-time)
+- [User logs in with second IdP for the first time](#user-logs-in-with-second-idp-for-the-first-time)
+- [User logs in with second IdP for a second time](#user-logs-in-with-second-idp-for-a-second-time)
+- [User logs in with third IdP and the first two are already linked](#user-logs-in-with-third-idp-and-the-first-two-are-already-linked)
+- [User logs in with third IdP for the first time and the other two are not linked](#user-logs-in-with-third-idp-for-the-first-time-and-the-other-two-are-not-linked)
+- [User logs in with third IdP that they've used before and the other two are not linked](#user-logs-in-with-third-idp-that-theyve-used-before-and-the-other-two-are-not-linked)
+
+
+## User logs in with Temporary IdP
 
 ```mermaid
 sequenceDiagram
@@ -26,7 +41,7 @@ sequenceDiagram
 ![Deratcheting Temporary IdP](../imgs/deratcheting_temporary_idp.svg)
 [Deratcheting Temporary IdP](../imgs/deratcheting_temporary_idp.png)
 
-# User succeeds at logging into RP with AAL
+## User succeeds at logging into RP with AAL
 
 ```mermaid
 sequenceDiagram
@@ -69,7 +84,7 @@ sequenceDiagram
 * Therefore allow the user into the RP
 * User is redirected to the RP
 
-# User fails to log into RP with AAL
+## User fails to log into RP with AAL
 
 ```mermaid
 sequenceDiagram
@@ -112,7 +127,7 @@ sequenceDiagram
 * Therefore do not allow the user into the RP
 * User is redirected to Error Unauthorized Page
 
-# Account Linking
+## Account Linking
 
 ```mermaid
 sequenceDiagram
@@ -136,7 +151,7 @@ sequenceDiagram
 ![Deratcheting Account Linking](../imgs/deratcheting_account_linking.svg)
 [Deratcheting Account Linking](../imgs/deratcheting_account_linking.png)
 
-## User logs in with the Mozilla IAM system for the first time
+### User logs in with the Mozilla IAM system for the first time
 
 * GitHub returns profile of user to Auth0
     * `email=fulan@example.com`
@@ -149,7 +164,7 @@ sequenceDiagram
     * Yes, allow the user to log in to the RP
     * `user_id` is `github|123456`
 
-## User logs in with second IdP for the first time
+### User logs in with second IdP for the first time
 
 * GitHub returns profile of user to Auth0
     * `email=fulan@example.com`
@@ -169,7 +184,7 @@ sequenceDiagram
     * Allow the user to log in to the RP
     * `user_id` is `ad|mozilla-ldap|fulan@example.com`
 
-## User logs in with second IdP for a second time
+### User logs in with second IdP for a second time
 
 * GitHub returns profile of user to Auth0
     * `email=fulan@example.com`
@@ -180,7 +195,7 @@ sequenceDiagram
     * Allow the user to login to the RP
     * `user_id` is `ad|mozilla-ldap|fulan@example.com`
 
-## User logs in with third IdP and the first two are already linked
+### User logs in with third IdP and the first two are already linked
 
 * GitHub returns profile of user to Auth0
     * `email=fulan@example.com`
@@ -203,7 +218,7 @@ sequenceDiagram
     * Allow the user to login to the RP
     * `user_id` is `ad|mozilla-ldap|fulan@example.com`
 
-## User logs in with third IdP for the first time and the other two are not linked
+### User logs in with third IdP for the first time and the other two are not linked
 
 ```mermaid
 sequenceDiagram
@@ -258,7 +273,7 @@ sequenceDiagram
         * Allow the user to login to the RP
             * `user_id` is `github|123456`
 
-## User logs in with third IdP that they've used before and the other two are not linked
+### User logs in with third IdP that they've used before and the other two are not linked
 
 * Firefox Accounts returns profile of user to Auth0
     * `email=fulan@example.com`
