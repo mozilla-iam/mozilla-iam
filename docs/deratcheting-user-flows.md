@@ -24,6 +24,7 @@ sequenceDiagram
 ```
 
 ![Deratcheting Temporary IdP](../imgs/deratcheting_temporary_idp.svg)
+[Deratcheting Temporary IdP](../imgs/deratcheting_temporary_idp.png)
 
 # User succeeds at logging into RP with AAL
 
@@ -46,6 +47,7 @@ sequenceDiagram
 ```
 
 ![Deratcheting Login Success with AAL](../imgs/deratcheting_login_success_aal.svg)
+[Deratcheting Login Success with AAL](../imgs/deratcheting_login_success_aal.png)
 
 * Did GitHub report that the user has a registered MFA method with GitHub?
     * Yes
@@ -88,6 +90,7 @@ sequenceDiagram
 ```
 
 ![Deratcheting Login Failure with AAL](../imgs/deratcheting_login_failure_aal.svg)
+[Deratcheting Login Failure with AAL](../imgs/deratcheting_login_failure_aal.png)
 
 * Did GitHub report that the user has a registered MFA method with GitHub?
     * No
@@ -131,6 +134,7 @@ sequenceDiagram
 ```
 
 ![Deratcheting Account Linking](../imgs/deratcheting_account_linking.svg)
+[Deratcheting Account Linking](../imgs/deratcheting_account_linking.png)
 
 ## User logs in with the Mozilla IAM system for the first time
 
@@ -221,6 +225,7 @@ sequenceDiagram
 ```
 
 ![Deratcheting Account Linking with third IdP](../imgs/deratcheting_account_linking_third_idp.svg)
+[Deratcheting Account Linking with third IdP](../imgs/deratcheting_account_linking_third_idp.png)
 
 * Firefox Accounts returns profile of user to Auth0
     * `email=fulan@example.com`
