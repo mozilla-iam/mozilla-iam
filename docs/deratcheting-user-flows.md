@@ -156,6 +156,8 @@ sequenceDiagram
 
 ### User logs in with the Mozilla IAM system for the first time
 
+This case would only occur for new users (users that have not used the Mozilla IAM system before the new deratcheting rules were active). This case would happen only once for a given user.
+
 * GitHub returns profile of user to Auth0
     * `email=fulan@example.com`
 * Auth0 creates a new profile for this new GitHub user. Now that this new profile exists, searches for profiles done after this point in the rules will return this brand new profile.
@@ -168,6 +170,8 @@ sequenceDiagram
     * `user_id` sent to the RP is `github|123456`
 
 ### User logs in with second IdP for the first time
+
+This case would occur for old and new users (users that have and have not used the Mozilla IAM system before the new deratcheting rules were active). This case would happen only once for a given user.
 
 * GitHub returns profile of user to Auth0
     * `email=fulan@example.com`
@@ -189,6 +193,8 @@ sequenceDiagram
 
 ### User logs in with second IdP for a second time
 
+This case would occur for old and new users (users that have and have not used the Mozilla IAM system before the new deratcheting rules were active). This case would happen very frequently, every time a user logs in with an IdP they've used before but which happens to not be their primary IdP.
+
 * GitHub returns profile of user to Auth0
     * `email=fulan@example.com`
 * Auth0 finds the existing profile for this existing GitHub user
@@ -199,6 +205,8 @@ sequenceDiagram
     * `user_id` sent to the RP is `ad|mozilla-ldap|fulan@example.com`
 
 ### User logs in with third IdP and the first two are already linked
+
+This case would occur as, over time, users use the Mozilla IAM system after these new deratcheting rules are in place and use IdPs they've never used before. This case would happen once each time a user uses a new IdP for the first time.
 
 * GitHub returns profile of user to Auth0
     * `email=fulan@example.com`
@@ -222,6 +230,8 @@ sequenceDiagram
     * `user_id` sent to the RP is `ad|mozilla-ldap|fulan@example.com`
 
 ### User logs in with third IdP for the first time and the other two are not linked
+
+This case will be rare as the only users that trigger it would be existing users of the Mozilla IAM system logging in just after these new deratcheting rules become active with an IdP they've *never* used before. This would be unlikely but possible. This case would only ever happen once to a given user.
 
 ```mermaid
 sequenceDiagram
@@ -277,6 +287,8 @@ sequenceDiagram
             * `user_id` sent to the RP is `github|123456`
 
 ### User logs in with third IdP that they've used before and the other two are not linked
+
+This case will be most common for existing users of the Mozilla IAM system logging in just after these new deratcheting rules become active. Most users will have multiple pre-existing Auth0 profiles from different IdPs and they will trigger this flow the first time they login *after* the new deratcheting rules are active. This case will only ever happen once for any given user.
 
 * Firefox Accounts returns profile of user to Auth0
     * `email=fulan@example.com`
