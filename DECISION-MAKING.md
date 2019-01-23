@@ -6,6 +6,13 @@ This document list which team or people are **responsible for making decisions**
 
 All decisions are taken by consulting various parties of different teams in and outside of Mozilla.
 
+Owners are responsible for
+
+- Providing road maps for their module that align with Mozilla OKRs
+- Breaking down tasks associated with Objectives and Key Results into sub tasks that can be worked on in a sprint
+- Making decisions about the module that align with OKRs and technical considerations
+- Raising issues associated with OKRs, milestones, tech stack etc to IAM stakeholders
+
 ## UX (User Experience)
 
 User flow, design, etc.
@@ -40,7 +47,7 @@ Repositories:
 API which presents and allows manipulation of CIS data. This includes a publicly available endpoint to _Mozilla IAM_ (replacing the Mozillians.org API).
 
 - Owner: @akrug
-- Peers: @gdestuynder <can we add a ParSys Peer?>
+- Peers: @gdestuynder @fiji-flo
 - Operator: EIS
 
 Repository:
@@ -134,7 +141,7 @@ Repository:
 This is the Staff user database, credential storage and group system (IdP). It also contains some non-staff contributors.
 
 - Owner: @jdow
-- Peers: TBD
+- Peers: @gcox
 - Operator: EIS
 
 ## DuoSecurity (2FA)
