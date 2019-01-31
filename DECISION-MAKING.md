@@ -164,9 +164,9 @@ Repository:
 
 ## IAM Infrastructure
 
-- Owner (accountable, decision maker): TBD
-- Peers: @danielh (infra) @adelbarrio (monitoring&alerting) @andrewkrug @fiji-flo
-- Operator (responsible, developer): IT (MOC?)
+- Owner: @adelbarrio 
+- Peers: @ziegeer @andrewkrug @fiji-flo
+- Operator: EIS, SREs
 
 ## OpenLDAP
 
