@@ -1,8 +1,6 @@
 `Last update: 2019-01`
 
-> **Table of contents**
-> 
-> * [Mozilla IAM Modules Owners](#mozilla-iam-modules-owners)
+> **Modules**
 >   * [UX (User Experience)](#ux-user-experience)
 >   * [Django OIDC](#django-oidc)
 >   * [CIS (Change Integration Service)](#cis-change-integration-service)
@@ -31,6 +29,15 @@ All decisions are taken by consulting various parties of different teams in and 
 - Breaking down tasks associated with Objectives and Key Results into sub tasks that can be worked on in a sprint
 - Making decisions about the module that align with OKRs and technical considerations
 - Raising issues associated with OKRs, milestones, tech stack etc to IAM stakeholders
+
+## Stakeholders
+
+Stakeholders are high-level responsible, accountable persons for specific Mozilla functions. They're responsible for drafting the high-level OKRs, roadmap and resolving issues or problems.
+
+Open Innovation: @hmitsch
+Enterprise Information Security: @jeffbryner (Capability owner)
+IAM Product owner: @gdestuynder (Technical Lead)
+Program Manager: Linda
 
 ## UX (User Experience)
 
