@@ -1,4 +1,23 @@
-`Last update: 2018-07`
+`Last update: 2019-01`
+
+> **Table of contents**
+> 
+> * [Mozilla IAM Modules Owners](#mozilla-iam-modules-owners)
+>   * [UX (User Experience)](#ux-user-experience)
+>   * [Django OIDC](#django-oidc)
+>   * [CIS (Change Integration Service)](#cis-change-integration-service)
+>   * [IAM User Profile](#iam-user-profile)
+>   * [Access Provider](#access-provider)
+>   * [SSO Dashboard](#sso-dashboard)
+>   * [SSO Dashboard Configuration and Access Control Database](#sso-dashboard-configuration-and-access-control-database)
+>   * [New Login Experience (NLX)](#new-login-experience-nlx)
+>   * [DinoPark](#dinopark)
+>   * [Legacy Mozillians.org (to be replaced by DinoPark and CIS)](#legacy-mozilliansorg-to-be-replaced-by-dinopark-and-cis)
+>   * [Phonebook](#phonebook)
+>   * [IAM Infrastructure](#iam-infrastructure)
+>   * [OpenLDAP](#openldap)
+>   * [DuoSecurity (2FA)](#duosecurity-2fa)
+
 
 # _Mozilla IAM_ Modules Owners
 
