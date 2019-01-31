@@ -37,7 +37,7 @@ Stakeholders are high-level responsible, accountable persons for specific Mozill
 Open Innovation: @hmitsch
 Enterprise Information Security: @jeffbryner (Capability owner)
 IAM Product owner: @gdestuynder (Technical Lead)
-Program Manager: Linda
+Program Manager: @waltschak
 
 ## UX (User Experience)
 
