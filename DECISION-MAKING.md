@@ -34,7 +34,7 @@ Repositories:
 
 Backend which deals with IAM data integration from multiple sources and provides various APIs to CIS (PersonAPI, Change/Person endpoints, well-known endpoint). This includes signing, authorization, profile storage model, publishing code and drivers.
 
-- Module Owner: @akrug
+- Module Owner: @andrewkrug
 - Peers: @gdestuynder @fiji-flo
 - Operator: EIS
 
@@ -51,7 +51,7 @@ Repositories:
 The IAM user profile utilize by CIS and other modules. It also presents the schema and profile rules on the well-known endpoints.
 
 - Module Owner: @gdestuynder
-- Peers: @akrug @fiji-flo
+- Peers: @andrewkrug @fiji-flo
 - Operator: EIS
 
 ## Access Provider
@@ -59,7 +59,7 @@ The IAM user profile utilize by CIS and other modules. It also presents the sche
 Provides OIDC, SAML, WS-FED, etc. connectivity and IdP shadowing for the purpose of providing identity and access management to relying parties. Currently utilizes Auth0 to perform this function. This includes all auth0 related CI, configuration and rule engine.
 
 - Module Owner: @gdestuynder
-- Peers: @jdow @gene1wood @akrug
+- Peers: @jdow @gene1wood @andrewkrug
 - Operator: Third party (Auth0)
 
 Repositories:
@@ -71,7 +71,7 @@ Repositories:
 
 This is the application launcher available at https://sso.mozilla.com.
 
-- Owner: @akrug
+- Owner: @andrewkrug
 - Peers: @gdestuynder
 - Operator: EIS
 
@@ -83,7 +83,7 @@ Repository:
 This is the configuration and `apps.yml`.
 
 - Owner: @jdow
-- Peers: @akrug @gdestuynder
+- Peers: @andrewkrug @gdestuynder
 - Operator: EIS
 
 Repository:
@@ -94,7 +94,7 @@ Repository:
 This is the login window for _Mozilla IAM_.
 
 - Owner: @hidde
-- Peers: @akrug @gdestuynder @gene1wood
+- Peers: @andrewkrug @gdestuynder @gene1wood
 - Operator: EIS
 
 Repository:
@@ -129,7 +129,7 @@ Repository:
 
 This is the Staff-only accessible system to access Mozilla's org chart and Staff profiles, available at https://phonebook.mozilla.org.
 
-- Owner: @akrug
+- Owner: @andrewkrug
 - Peers: @atoll
 - Operator: IT
 
@@ -139,7 +139,7 @@ Repository:
 ## IAM Infrastructure
 
 - Owner (accountable, decision maker): TBD
-- Peers: @danielh (infra) @adelbarrio (monitoring&alerting) @akrug @fiji-flo
+- Peers: @danielh (infra) @adelbarrio (monitoring&alerting) @andrewkrug @fiji-flo
 - Operator (responsible, developer): IT (MOC?)
 
 ## OpenLDAP
