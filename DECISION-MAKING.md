@@ -108,7 +108,21 @@ This is the login window for _Mozilla IAM_.
 Repository:
 - https://github.com/mozilla-iam/auth0-custom-lock
 
-## Mozillians.org Profile and Group Management
+## DinoPark
+
+This is the new place to edit _Mozilla IAM_ profiles, manage groups, search & discover people. It will be available at https://people.mozilla.org (beta at https://people.allizom.community).
+
+- Owner: @fiji-flo
+- Peers: @hidde @Gregoor @hmitsch
+- Operator: ParSys
+
+Repositories:
+- https://github.com/mozilla-iam/dino-park-front-end
+- https://github.com/mozilla-iam/dino-park-search
+- https://github.com/mozilla-iam/dino-tree
+- https://github.com/mozilla/mozillians
+
+## Legacy Mozillians.org (to be replaced by DinoPark and CIS)
 
 This is the place to edit _Mozilla IAM_ profiles, manage groups, search & discover people. It is available at https://mozillians.org.
 
@@ -133,7 +147,7 @@ Repository:
 ## IAM Infrastructure
 
 - Owner (accountable, decision maker): TBD
-- Peers: @danielh (infra) @adelbarrio (monitoring&alerting) @akrug @johngian
+- Peers: @danielh (infra) @adelbarrio (monitoring&alerting) @akrug @fiji-flo
 - Operator (responsible, developer): IT (MOC?)
 
 ## OpenLDAP
