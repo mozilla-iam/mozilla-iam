@@ -44,7 +44,7 @@ Stakeholders are high-level responsible, accountable persons for specific Mozill
 User flow, design, etc.
 
 - Module Owner: @mbranson
-- Peers: Rina
+- Peers: @flekkowich
 
 ## Django OIDC
 
