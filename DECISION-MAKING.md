@@ -164,8 +164,8 @@ Repository:
 
 ## IAM Infrastructure
 
-- Owner: @adelbarrio 
-- Peers: @ziegeer @andrewkrug @fiji-flo
+- Owner: @andrewkrug
+- Peers: @adelbarrio @ziegeer @fiji-flo
 - Operator: EIS, SREs
 
 ## OpenLDAP
