@@ -34,10 +34,10 @@ All decisions are taken by consulting various parties of different teams in and 
 
 Stakeholders are high-level responsible, accountable persons for specific Mozilla functions. They're responsible for drafting the high-level OKRs, roadmap and resolving issues or problems.
 
-Open Innovation: @hmitsch
-Enterprise Information Security: @jeffbryner (Capability owner)
-IAM Product owner: @gdestuynder (Technical Lead)
-Program Manager: @waltschak
+* Open Innovation: @hmitsch
+* Enterprise Information Security: @jeffbryner (Capability owner)
+* IAM Product owner: @gdestuynder (Technical Lead)
+* Program Manager: @waltschak
 
 ## UX (User Experience)
 
