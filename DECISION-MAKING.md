@@ -25,7 +25,7 @@ All decisions are taken by consulting various parties of different teams in and 
 
 **Module owners are responsible for:**
 
-- Aligning module-level key results (KRs) with the IAM roadmap milestones and objectives. The IAM roadmap milestones are set together with the module owners the IAM product owner.
+- Aligning module-level key results (KRs) with the IAM roadmap milestones and objectives. The IAM roadmap milestones are set together with the module owners the Stakeholders.
 - Breaking down tasks associated with Objectives and Key Results into sub tasks that can be worked on in a sprint
 - Making decisions about the module that align with OKRs and technical considerations
 - Raising issues associated with OKRs, milestones, tech stack etc to IAM stakeholders
