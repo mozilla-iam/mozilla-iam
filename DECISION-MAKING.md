@@ -1,4 +1,21 @@
-`Last update: 2018-07`
+`Last update: 2019-01`
+
+> **Modules**
+>   * [UX (User Experience)](#ux-user-experience)
+>   * [Django OIDC](#django-oidc)
+>   * [CIS (Change Integration Service)](#cis-change-integration-service)
+>   * [IAM User Profile](#iam-user-profile)
+>   * [Access Provider](#access-provider)
+>   * [SSO Dashboard](#sso-dashboard)
+>   * [SSO Dashboard Configuration and Access Control Database](#sso-dashboard-configuration-and-access-control-database)
+>   * [New Login Experience (NLX)](#new-login-experience-nlx)
+>   * [DinoPark](#dinopark)
+>   * [Legacy Mozillians.org (to be replaced by DinoPark and CIS)](#legacy-mozilliansorg-to-be-replaced-by-dinopark-and-cis)
+>   * [Phonebook](#phonebook)
+>   * [IAM Infrastructure](#iam-infrastructure)
+>   * [OpenLDAP](#openldap)
+>   * [DuoSecurity (2FA)](#duosecurity-2fa)
+
 
 # _Mozilla IAM_ Modules Owners
 
@@ -6,19 +23,28 @@ This document list which team or people are **responsible for making decisions**
 
 All decisions are taken by consulting various parties of different teams in and outside of Mozilla.
 
-Owners are responsible for
+**Module owners are responsible for:**
 
-- Align module-level key results (KRs) with the IAM roadmap milestones and objectives. The IAM roadmap milestones are set together with the module owners the IAM product owner.
+- Aligning module-level key results (KRs) with the IAM roadmap milestones and objectives. The IAM roadmap milestones are set together with the module owners the Stakeholders.
 - Breaking down tasks associated with Objectives and Key Results into sub tasks that can be worked on in a sprint
 - Making decisions about the module that align with OKRs and technical considerations
 - Raising issues associated with OKRs, milestones, tech stack etc to IAM stakeholders
+
+## Stakeholders
+
+Stakeholders are high-level responsible, accountable persons for specific Mozilla functions. They're responsible for drafting the high-level OKRs, roadmap and resolving issues or problems.
+
+* Open Innovation: @hmitsch
+* Enterprise Information Security: @jeffbryner (Capability owner)
+* IAM Product owner: @gdestuynder (Technical Lead)
+* Program Manager: @waltschak
 
 ## UX (User Experience)
 
 User flow, design, etc.
 
 - Module Owner: @mbranson
-- Peers: Rina
+- Peers: @flekkowich
 
 ## Django OIDC
 
@@ -32,32 +58,46 @@ Repositories:
 
 ## CIS (Change Integration Service)
 
-Backend which deals with IAM data integration from multiple sources.
+Backend which deals with IAM data integration from multiple sources and provides various APIs to CIS (PersonAPI, Change/Person endpoints, well-known endpoint). This includes signing, authorization, profile storage model, publishing code and drivers.
 
-- Module Owner: @akrug
-- Peers: @gdestuynder
+- Module Owner: @andrewkrug
+- Peers: @gdestuynder @fiji-flo
 - Operator: EIS
 
 Repositories:
 - https://github.com/mozilla-iam/cis
 - https://github.com/mozilla-iam/cis_functions
+- https://github.com/mozilla-iam/person-api
+- https://github.com/mozilla-iam/gsuite-community-drive-driver
+- https://github.com/mozilla-iam/slack-driver/
 
-## Person API
 
-API which presents and allows manipulation of CIS data. This includes a publicly available endpoint to _Mozilla IAM_ (replacing the Mozillians.org API).
+## IAM User Profile
 
-- Owner: @akrug
-- Peers: @gdestuynder @fiji-flo
+The IAM user profile utilize by CIS and other modules. It also presents the schema and profile rules on the well-known endpoints.
+
+- Module Owner: @gdestuynder
+- Peers: @andrewkrug @fiji-flo
 - Operator: EIS
 
-Repository:
-- https://github.com/mozilla-iam/person-api
+## Access Provider
+
+Provides OIDC, SAML, WS-FED, etc. connectivity and IdP shadowing for the purpose of providing identity and access management to relying parties. Currently utilizes Auth0 to perform this function. This includes all auth0 related CI, configuration and rule engine.
+
+- Module Owner: @gdestuynder
+- Peers: @jdow @gene1wood @andrewkrug
+- Operator: Third party (Auth0)
+
+Repositories:
+- https://github.com/mozilla-iam/auth0-ci/
+- https://github.com/mozilla-iam/auth0-deploy
+- https://github.com/mozilla-iam/authzerolib
 
 ## SSO Dashboard
 
 This is the application launcher available at https://sso.mozilla.com.
 
-- Owner: @akrug
+- Owner: @andrewkrug
 - Peers: @gdestuynder
 - Operator: EIS
 
@@ -69,40 +109,18 @@ Repository:
 This is the configuration and `apps.yml`.
 
 - Owner: @jdow
-- Peers: @akrug @gdestuynder
+- Peers: @andrewkrug @gdestuynder
 - Operator: EIS
 
 Repository:
 - https://github.com/mozilla-iam/sso-dashboard-configuration
-
-## GSuite Community Driver
-
-This is the G Suite Team Drive integration.
-
-- Owner: @akrug
-- Peers: @gdestuynder
-- Operator: EIS
-
-Repository:
-- https://github.com/mozilla-iam/gsuite-community-drive-driver
-
-## Slack Driver
-
-This is the driver for Slack user deprovisioning.
-
-- Owner: @gdestuynder
-- Peers: @akrug
-- Operator: EIS
-
-Repository:
-- https://github.com/mozilla-iam/slack-driver/
 
 ## New Login Experience (NLX)
 
 This is the login window for _Mozilla IAM_.
 
 - Owner: @hidde
-- Peers: @akrug @gdestuynder
+- Peers: @andrewkrug @gdestuynder @gene1wood
 - Operator: EIS
 
 Repository:
@@ -137,7 +155,7 @@ Repository:
 
 This is the Staff-only accessible system to access Mozilla's org chart and Staff profiles, available at https://phonebook.mozilla.org.
 
-- Owner: @akrug
+- Owner: @andrewkrug
 - Peers: @atoll
 - Operator: IT
 
@@ -146,16 +164,16 @@ Repository:
 
 ## IAM Infrastructure
 
-- Owner (accountable, decision maker): TBD
-- Peers: @danielh (infra) @adelbarrio (monitoring&alerting) @akrug @fiji-flo
-- Operator (responsible, developer): IT (MOC?)
+- Owner: @andrewkrug
+- Peers: @adelbarrio @ziegeer @fiji-flo
+- Operator: EIS, SREs
 
 ## OpenLDAP
 
 This is the Staff user database, credential storage and group system (IdP). It also contains some non-staff contributors.
 
 - Owner: @jdow
-- Peers: @gcox
+- Peers: @gcox @gdestuynder
 - Operator: EIS
 
 ## DuoSecurity (2FA)
