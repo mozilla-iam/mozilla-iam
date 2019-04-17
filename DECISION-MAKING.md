@@ -141,7 +141,7 @@ Repositories:
 - https://github.com/mozilla-iam/dino-park-fence
 - https://github.com/mozilla-iam/dino-park-fossil
 - https://github.com/mozilla-iam/dino-park-lookout
-- https://github.com/mozilla-iam/dino-tree
+- https://github.com/mozilla-iam/dino-park-tree
 
 ## Legacy Mozillians.org (to be replaced by DinoPark and CIS)
 
