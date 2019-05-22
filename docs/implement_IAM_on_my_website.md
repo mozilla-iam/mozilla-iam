@@ -7,11 +7,16 @@ These are the options Mozilla also currently utilize with what we call Mozilla I
 
 ### Add this to my website!
 
-You will have to choose an authentication protocol (ordered by preference): OIDC (Open ID Connect), SAML, OAuth2 (without OIDC) or WS Federation.
+You will have to choose an authentication protocol (ordered by preference):
+
+- OIDC (Open ID Connect)
+- SAML
+- OAuth2 (without OIDC)
+- WS Federation
 
 The most common for open source apps and recent commercial applications is OIDC, while SAML is more common for enterprise-style applications or older applications. In some cases only OAuth2 is supported, and Windows-based services sometimes support WS Federation. Your mileage may vary.
 
-In all cases you will need to [https://mana.mozilla.org/wiki/display/SECURITY/SSO+Request+Form](register with us). You will get a set of credentials in exchange, to setup your application.
+In all cases you will need to (https://mana.mozilla.org/wiki/display/SECURITY/SSO+Request+Form)[register with us]. You will get a set of credentials in exchange, to setup your application.
 
 #### Access proxies / Reverse proxies
 
@@ -27,7 +32,7 @@ Examples of proxies:
 - https://github.com/keycloak/keycloak-gatekeeper (Nice reverse proxy in Golang)
 - https://github.com/zmartzone/mod_auth_openidc (OIDC Reverse proxy for Apache)
 - https://cloud.google.com/iap/ (Great if you use GCP)
-- https://aws.amazon.com/blogs/aws/built-in-authentication-in-alb/ (note: there are caveats with this solution at the time of writing this document)
+- https://aws.amazon.com/blogs/aws/built-in-authentication-in-alb/ (note: there are caveats with this solution at the time of writing this document - in particular it cannot filter access based on claims, so users are let in as long as they're able to authenticate. If that's an issue, use another proxy.)
 
 #### Custom integration
 
