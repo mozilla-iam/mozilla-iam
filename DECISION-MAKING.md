@@ -1,4 +1,4 @@
-`Last update: 2019-01`
+`Last update: 2019-06`
 
 > **Modules**
 >   * [UX (User Experience)](#ux-user-experience)
@@ -34,8 +34,8 @@ All decisions are taken by consulting various parties of different teams in and 
 
 Stakeholders are high-level responsible, accountable persons for specific Mozilla functions. They're responsible for drafting the high-level OKRs, roadmap and resolving issues or problems.
 
-* Open Innovation: @hmitsch
-* Enterprise Information Security: @jeffbryner (Capability owner)
+* Open Innovation: @hcondei
+* Enterprise Information Security: @chlin (Capability owner)
 * IAM Product owner: @gdestuynder (Technical Lead)
 * Program Manager: @waltschak
 
@@ -184,5 +184,5 @@ This is the Staff user database, credential storage and group system (IdP). It a
 This is the 2FA/MFA product utilized to augment OpenLDAP with a second-factor.
 
 - Owner: @gdestuynder
-- Peers: @jeffbryner
+- Peers: @claudijd
 - Operator: Third party (Duo)
