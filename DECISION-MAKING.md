@@ -147,8 +147,8 @@ Repositories:
 
 This is the place to edit _Mozilla IAM_ profiles, manage groups, search & discover people. It is available at https://mozillians.org.
 
-- Owner: @hmitsch
-- Peers: @johngian @akatsoulas @fiji-flo
+- Owner: @HCONDEI
+- Peers: @lucyeoh @fiji-flo
 - Operator: ParSys
 
 Repository:
