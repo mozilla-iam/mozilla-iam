@@ -1,4 +1,4 @@
-`Last update: 2019-06`
+`Last update: 2019-07`
 
 > **Modules**
 >   * [UX (User Experience)](#ux-user-experience)
