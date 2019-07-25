@@ -34,17 +34,16 @@ All decisions are taken by consulting various parties of different teams in and 
 
 Stakeholders are high-level responsible, accountable persons for specific Mozilla functions. They're responsible for drafting the high-level OKRs, roadmap and resolving issues or problems.
 
-* Open Innovation: @hcondei
+* Open Innovation: @HerminaC
 * Enterprise Information Security: @chlin (Capability owner)
 * IAM Product owner: @gdestuynder (Technical Lead)
-* Program Manager: @waltschak
 
 ## UX (User Experience)
 
 User flow, design, etc.
 
 - Module Owner: @mbranson
-- Peers: @flekkowich
+- Peers: @mcroud
 
 ## Django OIDC
 
@@ -119,8 +118,8 @@ Repository:
 
 This is the login window for _Mozilla IAM_.
 
-- Owner: @hidde
-- Peers: @andrewkrug @gdestuynder @gene1wood
+- Owner: @gdestuynder
+- Peers: @andrew-sunada
 - Operator: EIS
 
 Repository:
@@ -132,8 +131,8 @@ This is the new place to edit _Mozilla IAM_ profiles, manage groups, search & di
 Test environment is: https://dinopark.k8s.test.sso.allizom.org/ development environment is: https://dinopark.k8s.dev.sso.allizom.org
 
 - Owner: @HerminaC
-- Peers: @hidde @Gregoor @fiji-flo
-- Operator: ParSys
+- Peers: @andrew-sunada @Gregoor @fiji-flo
+- Operator: OI
 
 Repositories:
 - https://github.com/mozilla-iam/dino-park-front-end
@@ -147,9 +146,9 @@ Repositories:
 
 This is the place to edit _Mozilla IAM_ profiles, manage groups, search & discover people. It is available at https://mozillians.org.
 
-- Owner: @HCONDEI
+- Owner: @HerminaC
 - Peers: @lucyeoh @fiji-flo
-- Operator: ParSys
+- Operator: OI
 
 Repository:
 - https://github.com/mozilla/mozillians
@@ -177,7 +176,7 @@ This is the Staff user database, credential storage and group system (IdP). It a
 
 - Owner: @jdow
 - Peers: @gcox @gdestuynder
-- Operator: EIS
+- Operator: CoreServices
 
 ## DuoSecurity (2FA)
 
