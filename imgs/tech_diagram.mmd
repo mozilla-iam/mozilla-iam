@@ -1,0 +1,70 @@
+graph LR
+classDef classUser fill:#f5cba7,stroke:#333,stroke-width:3px;
+classDef classPublisher fill:#82e0aa,stroke:#333,stroke-width:2px;
+classDef classMain fill: #7fb3d5 ,stroke:#333,stroke-width:4px,font-weight:900, font-variant: small-caps;
+classDef classMain2 fill:  #ec7063  ,stroke:#333,stroke-width:4px,font-weight:900, font-variant: small-caps;
+classDef classMain2L fill:  #d6eaf8   ,stroke:#333
+classDef classRP fill:  #c39bd3 ,stroke:#333,stroke-width:0px,font-weight:900,font-variant: small-caps;
+classDef classRPW fill: #c39bd3 ,stroke:#333,font-weight:900
+
+subgraph "Users of IAM"
+uAll>Mozilla Community fa:fa-user-astronaut]
+uStaff>Mozilla Staff fa:fa-user-astronaut]
+uAccess>Access Manager, group curator fa:fa-user-astronaut]
+uHR>Human Resources fa:fa-user-astronaut]
+uAny>All users fa:fa-user-astronaut]
+class uAll,uStaff,uAccess,uHR,uAny classUser;
+end
+
+subgraph "Publishers of IAM data"
+pDinoPark(Mozillians / people.mozilla.org  fa:fa-address-card .)
+pHRIS(Workday / HRIS fa:fa-address-card)
+pLDAP(Mozilla LDAP fa:fa-address-card)
+class pDinoPark,pHRIS,pLDAP classPublisher;
+end
+
+
+
+AP(("Auth0<br>(Access Provider)" .))
+SSODash[SSO Dashboard / sso.mozilla.org / apps.yml .]
+Duo[DuoSecurity 2FA fa:fa-user-check .]
+IDP(("Identity Providers<br><br>(Google, GitHub,<br>FxA, Passwordless) fa:fa-id-badge ."))
+NLX[Login page]
+class AP,Duo,NLX,SSODash classMain;
+class IDP classMain2L;
+
+
+subgraph "Relying Parties"
+RP[/Web properties\]
+RPW(Discourse,<br>Gmail,<br>Mana,<br>Taskcluster,  .<br>...)
+class RPW classRPW;
+class RP classRP;
+end
+
+CIS{"Change Integration Service fa:fa-arrows-alt .<br>(PersonAPI, ChangeAPI)"}
+class CIS classMain2;
+
+
+uStaff --> pDinoPark
+uStaff --> pHRIS
+uAll -->|Manage profile & consult groups| pDinoPark
+uAccess -->|Control Access groups| pDinoPark
+uAccess -->|Control LDAP groups| pLDAP
+uHR-->|Modify employment data| pHRIS
+
+pLDAP==>CIS
+pHRIS==>CIS
+pDinoPark==>CIS
+AP-.->CIS
+
+CIS==>AP
+AP-.->Duo
+AP-.->IDP
+AP-.->NLX
+NLX-.->IDP
+NLX-.->|Get user info| CIS
+
+AP==>RP
+
+SSODash-->|Provide access information .| AP
+uAny-->|Sign-in| RP
