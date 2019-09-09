@@ -3,13 +3,13 @@
 > **Modules**
 >   * Core functionality
 >     * [Access Provider](#access-provider) the glue for everything (Auth0).
->     * [SSO Dashboard Configuration and Access Control Database](#sso-dashboard-configuration-and-access-control-database) where access control is set at the IAM level (additionaly to the site's own controls).
+>     * [SSO Dashboard Configuration and Access Control Database](#sso-dashboard-configuration-and-access-control-database) where access control is set at the IAM level (additionally to the site's own controls).
 >     * [New Login Experience (NLX)](#new-login-experience-nlx) the login panel to login to websites.
 >     * [OpenLDAP](#openldap) staff Identity Provider
 >     * [DuoSecurity (2FA)](#duosecurity-2fa) staff 2FA
 >   * Core APIs
 >     * [CIS (Change Integration Service)](#cis-change-integration-service)
->     * [IAM User Profile](#iam-user-profile) the user profile specificiation.
+>     * [IAM User Profile](#iam-user-profile) the user profile specification.
 >   * Website integration
 >     * [Django OIDC](#django-oidc) to integrate your Django website with IAM.
 >   * Websites
