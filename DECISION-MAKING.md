@@ -1,4 +1,4 @@
-`Last update: 2019-07`
+`Last update: 2019-09`
 
 > **Modules**
 >   * Core functionality
