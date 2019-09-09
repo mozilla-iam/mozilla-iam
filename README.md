@@ -4,7 +4,7 @@
 > All Mozillians (paid staff and contributors) have convenient and appropriate access to Mozilla services through a unified, authoritative, integrated identity system that empowers them to build a better Internet
 
 # Summary
-Mozilla’s Identity and Access Management (IAM) efforts improvements productivity of Mozillians (end-users and operational teams) by streamlining IAM management tasks while providing visibility.
+Mozilla’s Identity and Access Management (IAM) aim to improve the productivity of Mozillians (end-users and operational teams) by streamlining IAM management tasks while providing visibility.
 Additionally, IAM provides an easier and significantly safer experience for the user and for services in need of authentication.
 
 See also the [press statement](Press.md) (this is not a real press-statement, it is an exercise to kick-start projects).
