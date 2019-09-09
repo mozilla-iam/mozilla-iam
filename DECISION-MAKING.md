@@ -1,20 +1,32 @@
 `Last update: 2019-07`
 
 > **Modules**
->   * [UX (User Experience)](#ux-user-experience)
->   * [Django OIDC](#django-oidc)
->   * [CIS (Change Integration Service)](#cis-change-integration-service)
->   * [IAM User Profile](#iam-user-profile)
->   * [Access Provider](#access-provider)
->   * [SSO Dashboard](#sso-dashboard)
->   * [SSO Dashboard Configuration and Access Control Database](#sso-dashboard-configuration-and-access-control-database)
->   * [New Login Experience (NLX)](#new-login-experience-nlx)
->   * [DinoPark](#dinopark)
->   * [Legacy Mozillians.org (to be replaced by DinoPark and CIS)](#legacy-mozilliansorg-to-be-replaced-by-dinopark-and-cis)
->   * [Phonebook](#phonebook)
->   * [IAM Infrastructure](#iam-infrastructure)
->   * [OpenLDAP](#openldap)
->   * [DuoSecurity (2FA)](#duosecurity-2fa)
+>   * Core functionality
+>     * [Access Provider](#access-provider) the glue for everything (Auth0).
+>     * [SSO Dashboard Configuration and Access Control Database](#sso-dashboard-configuration-and-access-control-database) where access control is set at the IAM level (additionaly to the site's own controls).
+>     * [New Login Experience (NLX)](#new-login-experience-nlx) the login panel to login to websites.
+>     * [OpenLDAP](#openldap) staff Identity Provider
+>     * [DuoSecurity (2FA)](#duosecurity-2fa) staff 2FA
+>   * Core APIs
+>     * [CIS (Change Integration Service)](#cis-change-integration-service)
+>     * [IAM User Profile](#iam-user-profile) the user profile specificiation.
+>   * Website integration
+>     * [Django OIDC](#django-oidc) to integrate your Django website with IAM.
+>   * Websites
+>     * [SSO Dashboard](#sso-dashboard) where you find the websites you can access.
+>     * [DinoPark](#dinopark) the user profile editor.
+>     * [Legacy Mozillians.org (to be replaced by DinoPark and CIS)](#legacy-mozilliansorg-to-be-replaced-by-dinopark-and-cis)
+>   * [IAM Infrastructure](#iam-infrastructure) how IAM runs.
+>   * [UX (User Experience)](#ux-user-experience) how everything works together from a user point of view.
+
+
+# _Mozilla DRI_
+Mozilla also leverage the DRI model (Directely Responsible Individual) similarly to [GitLab](https://about.gitlab.com/handbook/people-operations/directly-responsible-individuals/)
+The IAM DRI is responsible for maintaining this file (module owners) and is the ultimate decision maker. The DRI is also responsible for the project's success or failure.
+DRIs are responsible for drafting the high-level miletones, roadmap and resolving issues or problems.
+
+- IAM DRI: Guillaume Destuynder
+- DinoPark DRI: Hermina Condei
 
 
 # _Mozilla IAM_ Modules Owners
@@ -25,18 +37,11 @@ All decisions are taken by consulting various parties of different teams in and 
 
 **Module owners are responsible for:**
 
-- Aligning module-level key results (KRs) with the IAM roadmap milestones and objectives. The IAM roadmap milestones are set together with the module owners the Stakeholders.
-- Breaking down tasks associated with Objectives and Key Results into sub tasks that can be worked on in a sprint
-- Making decisions about the module that align with OKRs and technical considerations
-- Raising issues associated with OKRs, milestones, tech stack etc to IAM stakeholders
+- Aligning module-level miletones and issues with the IAM roadmap milestones and objectives. The IAM roadmap milestones are set together with the module owners, the DRI and stakeholders.
+- Breaking down tasks associated with miletones into sub tasks that can be worked on in a sprint.
+- Making decisions about the module that align with Mozilla OKRs and technical considerations.
+- Raising issues associated with OKRs, milestones, tech stack etc. to the IAM DRI.
 
-## Stakeholders
-
-Stakeholders are high-level responsible, accountable persons for specific Mozilla functions. They're responsible for drafting the high-level OKRs, roadmap and resolving issues or problems.
-
-* Open Innovation: @HerminaC
-* Enterprise Information Security: @chlin (Capability owner)
-* IAM Product owner: @gdestuynder (Technical Lead)
 
 ## UX (User Experience)
 
@@ -131,7 +136,7 @@ This is the new place to edit _Mozilla IAM_ profiles, manage groups, search & di
 Test environment is: https://dinopark.k8s.test.sso.allizom.org/ development environment is: https://dinopark.k8s.dev.sso.allizom.org
 
 - Owner: @HerminaC
-- Peers: @andrew-sunada @Gregoor @fiji-flo
+- Peers: @andrew-sunada @fiji-flo
 - Operator: OI
 
 Repositories:
@@ -153,16 +158,6 @@ This is the place to edit _Mozilla IAM_ profiles, manage groups, search & discov
 Repository:
 - https://github.com/mozilla/mozillians
 
-## Phonebook
-
-This is the Staff-only accessible system to access Mozilla's org chart and Staff profiles, available at https://phonebook.mozilla.org.
-
-- Owner: @andrewkrug
-- Peers: @atoll
-- Operator: IT
-
-Repository:
-- https://github.com/mozilla/phonebook
 
 ## IAM Infrastructure
 
