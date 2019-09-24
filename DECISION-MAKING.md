@@ -47,8 +47,8 @@ All decisions are taken by consulting various parties of different teams in and 
 
 User flow, design, etc.
 
-- Module Owner: @mbranson
-- Peers: @mcroud
+- Module Owner: @mcroud
+- Peers: @mbranson
 
 ## Django OIDC
 
@@ -130,7 +130,7 @@ This is the login window for _Mozilla IAM_.
 Repository:
 - https://github.com/mozilla-iam/auth0-custom-lock
 
-## DinoPark
+## PMO
 
 This is the new place to edit _Mozilla IAM_ profiles, manage groups, search & discover people. It will be available at https://people.mozilla.org (beta at https://people.allizom.community).
 Test environment is: https://dinopark.k8s.test.sso.allizom.org/ development environment is: https://dinopark.k8s.dev.sso.allizom.org
@@ -147,7 +147,7 @@ Repositories:
 - https://github.com/mozilla-iam/dino-park-lookout
 - https://github.com/mozilla-iam/dino-park-tree
 
-## Legacy Mozillians.org (to be replaced by DinoPark and CIS)
+## Legacy Mozillians.org (to be replaced by PMO and CIS)
 
 This is the place to edit _Mozilla IAM_ profiles, manage groups, search & discover people. It is available at https://mozillians.org.
 
