@@ -47,8 +47,8 @@ All decisions are taken by consulting various parties of different teams in and 
 
 User flow, design, etc.
 
-- Module Owner: @mbranson
-- Peers: @mcroud
+- Module Owner: @mcroud
+- Peers: @mbranson
 
 ## Django OIDC
 
