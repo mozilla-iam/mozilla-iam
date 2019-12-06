@@ -56,6 +56,27 @@ Note: The access validation occurs as part of the "2 Stage Access validation" co
 
 ![expirationofaccess](/imgs/expirationofaccess.png?raw=true "Expiration of access diagram")
 
+## Authentication Assurance
+
+Mozilla IAM uses various indicators in order to figure out if a user should have access to a relying party. AAI
+(Authentication Assurance Indicators) are generated for the user who's authenticating. These could be indicators that a
+user has used a 2FA device (with different strength of authentication), that their geo-location changed, that their
+identity provider performed additional authentication checks, that they've logged in before with the same machine, that
+their machine's software is up to date, etc.
+
+These AAIs are ranked and used to determine an AAL (Authentication Assurance Level) for that iteration of the
+authencation of the user. The AAL is re-calculated each time a user authenticates as the indicators may have
+changed. A map of AAI to AAL can be found in our [well-known endpoint](https://auth.mozilla.com/.well-known/mozilla-iam).
+
+The AALs are ranked using the [Mozilla Standard Levels](https://infosec.mozilla.org/guidelines/risk/standard_levels),
+i.e. `LOW/MEDIUM/HIGH/MAXIMUM`. The AAL is used to determine if a user should be granted access per relying party.
+
+For example, if `AAL=LOW`, the user may be able to chat on Discourse, but have no administrative capabilities (which may
+require `AAL=HIGH`).
+
+The default for all relying parties is to require `AAL=MEDIUM`. An example of a relying party allowing `AAL=LOW` would
+be https://discourse.mozilla-community.org/ or https://voice.mozilla.org/
+
 # Links and information
 ## Internal links
 - [Mozilla internal "mana" page](https://mana.mozilla.org/wiki/display/SECURITY/IAM) This contains some internal processes and some legacy documentation.
