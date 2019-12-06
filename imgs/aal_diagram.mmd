@@ -1,0 +1,22 @@
+graph TD
+U(fa:fa-user-astronaut User)
+M(fa:fa-laptop User machine)
+L(fa:fa-sign-in-alt SSO Login system)
+W(fa:fa-window-maximize Chat Website)
+WA(fa:fa-exclamation fa:fa-window-maximize Chat Website Admin)
+AAI[fa:fa-search AA Indicators]
+AM[fa:fa-database AA Level]
+LOW{fa:fa-ban Assurance is LOW}
+HIGH{fa:fa-check-circle Assurance is HIGH}
+
+M-.->|Has disk encryption,<br> system up to date|AAI
+U-.->|Used 2FA, Geoloc,<br>same browser|AAI
+
+M---U
+U--login with credentials-->L
+AAI-->AM
+AM-->L
+L-->AM
+
+L-->LOW-->W
+L-->HIGH-->WA
