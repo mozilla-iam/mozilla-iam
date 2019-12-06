@@ -72,10 +72,12 @@ The AALs are ranked using the [Mozilla Standard Levels](https://infosec.mozilla.
 i.e. `LOW/MEDIUM/HIGH/MAXIMUM`. The AAL is used to determine if a user should be granted access per relying party.
 
 For example, if `AAL=LOW`, the user may be able to chat on Discourse, but have no administrative capabilities (which may
-require `AAL=HIGH`).
+require `AAL=HIGH`). See also the diagram below illustrating this use case.
 
-The default for all relying parties is to require `AAL=MEDIUM`. An example of a relying party allowing `AAL=LOW` would
+NOTE: The default for all relying parties is to require `AAL=MEDIUM`. An example of a relying party allowing `AAL=LOW` would
 be https://discourse.mozilla-community.org/ or https://voice.mozilla.org/
+
+![authenticationassurance](/imgs/aal_diagram.png?raw=true "Authentication Assurance diagram")
 
 # Links and information
 ## Internal links

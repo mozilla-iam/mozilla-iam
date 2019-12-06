@@ -5,3 +5,4 @@
     "curve": "basis"
   }
 }```
+- aal_diagram.png See aal_diagram.mmd. Render is like tech_diagram.
