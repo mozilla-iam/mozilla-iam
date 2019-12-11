@@ -89,6 +89,7 @@ be https://discourse.mozilla-community.org/ or https://voice.mozilla.org/
 - [CONTRIBUTING](CONTRIBUTING.md) A list of principles that we go by when participating to the Mozilla IAM project.
   - [GitHub Security Settings](GitHub-Security-Settings.md) How our repositories are setup in GitHub, and why.
 - [GLOSSARY](GLOSSARY.md) A list of terms that are commonly used in this project, with their definition or explanation.
+- [Auth0 and IAM metrics dashboard](https://biff-5adb6e55.influxcloud.net/d/HuRNN_1Zk/iam-engagement?orgId=1) A dashboard with statistics about Auth0 usage and people.mozilla.org engagement. Note that the access is limited to Mozilla employees.
 
 ## Discussion
 - Discourse public, main board: https://discourse.mozilla-community.org/c/iam (iam@mozilla-community.org)
