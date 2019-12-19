@@ -31,7 +31,7 @@ URL: https://github.com/organizations/mozilla-iam/settings
 
 #### 3rd party access, OAuth apps and GitHub Apps
 
-All apps and 3rd party access **must** be reviewed and only allowed if all "org owners" agree. Do not add them without complete concensus from all owners, or without notification.
+All apps and 3rd party access **must** be reviewed and only allowed if all "org owners" agree. Do not add them without complete consensus from all owners, or without notification.
 
 ## mozilla-iam repository settings
 
