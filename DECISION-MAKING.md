@@ -64,8 +64,8 @@ Repositories:
 
 Backend which deals with IAM data integration from multiple sources and provides various APIs to CIS (PersonAPI, Change/Person endpoints, well-known endpoint). This includes signing, authorization, profile storage model, publishing code and drivers.
 
-- Module Owner: @andrewkrug
-- Peers: @gdestuynder @fiji-flo
+- Module Owner: @fiji-flo
+- Peers: @gene1wood @april
 - Operator: EIS
 
 Repositories:
@@ -80,16 +80,16 @@ Repositories:
 
 The IAM user profile utilize by CIS and other modules. It also presents the schema and profile rules on the well-known endpoints.
 
-- Module Owner: @gdestuynder
-- Peers: @andrewkrug @fiji-flo
+- Module Owner: @fiji-flo
+- Peers: @gene1wood @april
 - Operator: EIS
 
 ## Access Provider
 
 Provides OIDC, SAML, WS-FED, etc. connectivity and IdP shadowing for the purpose of providing identity and access management to relying parties. Currently utilizes Auth0 to perform this function. This includes all auth0 related CI, configuration and rule engine.
 
-- Module Owner: @gdestuynder
-- Peers: @jdow @gene1wood @andrewkrug
+- Module Owner: @gene1wood
+- Peers: @jdow @april
 - Operator: Third party (Auth0)
 
 Repositories:
@@ -101,8 +101,8 @@ Repositories:
 
 This is the application launcher available at https://sso.mozilla.com.
 
-- Owner: @andrewkrug
-- Peers: @gdestuynder
+- Owner: @gene1wood
+- Peers: @april
 - Operator: EIS
 
 Repository:
@@ -113,7 +113,7 @@ Repository:
 This is the configuration and `apps.yml`.
 
 - Owner: @jdow
-- Peers: @andrewkrug @gdestuynder
+- Peers: @gene1wood @april
 - Operator: EIS
 
 Repository:
@@ -123,14 +123,14 @@ Repository:
 
 This is the login window for _Mozilla IAM_.
 
-- Owner: @gdestuynder
-- Peers: @andrew-sunada
+- Owner: @andrew-sunada
+- Peers: @gene1wood
 - Operator: EIS
 
 Repository:
 - https://github.com/mozilla-iam/auth0-custom-lock
 
-## PMO
+## people.mozilla.org (PMO)
 
 This is the new place to edit _Mozilla IAM_ profiles, manage groups, search & discover people. It will be available at https://people.mozilla.org (beta at https://people.allizom.community).
 Test environment is: https://dinopark.k8s.test.sso.allizom.org/ development environment is: https://dinopark.k8s.dev.sso.allizom.org
@@ -161,8 +161,8 @@ Repository:
 
 ## IAM Infrastructure
 
-- Owner: @andrewkrug
-- Peers: @adelbarrio @ziegeer @fiji-flo
+- Owner: @adelbarrio
+- Peers: @ziegeer @fiji-flo
 - Operator: EIS, SREs
 
 ## OpenLDAP
@@ -170,13 +170,13 @@ Repository:
 This is the Staff user database, credential storage and group system (IdP). It also contains some non-staff contributors.
 
 - Owner: @jdow
-- Peers: @gcox @gdestuynder
+- Peers: @gcox
 - Operator: CoreServices
 
 ## DuoSecurity (2FA)
 
 This is the 2FA/MFA product utilized to augment OpenLDAP with a second-factor.
 
-- Owner: @gdestuynder
-- Peers: @claudijd
+- Owner: @gene1wood
+- Peers: @april @tristanweir
 - Operator: Third party (Duo)
