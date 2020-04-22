@@ -25,7 +25,7 @@ Mozilla also leverage the DRI model (Directely Responsible Individual) similarly
 The IAM DRI is responsible for maintaining this file (module owners) and is the ultimate decision maker. The DRI is also responsible for the project's success or failure.
 DRIs are responsible for drafting the high-level miletones, roadmap and resolving issues or problems.
 
-- IAM DRI: Guillaume Destuynder
+- IAM DRI: Jason Falivene
 - DinoPark DRI: Hermina Condei
 
 
