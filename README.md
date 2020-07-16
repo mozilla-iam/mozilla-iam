@@ -102,6 +102,17 @@ This organization has been created to hold IAM-related public repositories. Thes
 This organization follows https://mana.mozilla.org/wiki/display/POLICIES/Standard%3A+GitHub+repositories+and+organizations
 Access control needs to be tigher than on https://www.github.com/mozilla/ (main Mozilla GitHub organization) warranting it's separation.
 
+## Mozilla-IAM SLA
+Response time (triaging issues and PRs) varies between repositories, with the following repositories being identified as "crucial" which means we will do our best to stay on top of:
+- [mozilla-aws-cli](https://github.com/mozilla-iam/mozilla-aws-cli)
+- [federated-aws-rp](https://github.com/mozilla-iam/federated-aws-rp)
+- [auth0-custom-lock](https://github.com/mozilla-iam/auth0-custom-lock)
+- [sso-dashboard](https://github.com/mozilla-iam/sso-dashboard)
+- [sso-dashboard-configuration](https://github.com/mozilla-iam/sso-dashboard-configuration)
+- [auth0-ci](https://github.com/mozilla-iam/auth0-ci)
+- [auth0-deploy](https://github.com/mozilla-iam/auth0-deploy)
+- [cis](https://github.com/mozilla-iam/cis)
+
 ## About this repository
 This repository tracks all issues that do not have a GitHub repository assigned (such as non-code, code without repo, etc.)
 
