@@ -147,3 +147,5 @@ This is the Staff user database, credential storage and group system (IdP). It a
 ## DuoSecurity (2FA)
 
 This is the 2FA/MFA product utilized to augment OpenLDAP with a second-factor.
+
+- Operator: Third party (Duo) 
