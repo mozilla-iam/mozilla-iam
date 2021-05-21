@@ -79,6 +79,108 @@ be https://discourse.mozilla-community.org/ or https://voice.mozilla.org/
 
 ![authenticationassurance](/imgs/aal_diagram.png?raw=true "Authentication Assurance diagram")
 
+# Components
+
+>   * Core functionality
+>     * [Access Provider](#access-provider) the glue for everything (Auth0).
+>     * [SSO Dashboard Configuration and Access Control Database](#sso-dashboard-configuration-and-access-control-database) where access control is set at the IAM level (additionally to the site's own controls).
+>     * [New Login Experience (NLX)](#new-login-experience-nlx) the login panel to login to websites.
+>     * [OpenLDAP](#openldap) staff Identity Provider
+>     * [DuoSecurity (2FA)](#duosecurity-2fa) staff 2FA
+>   * Core APIs
+>     * [CIS (Change Integration Service)](#cis-change-integration-service)
+>     * [IAM User Profile](#iam-user-profile) the user profile specification.
+>   * Websites
+>     * [SSO Dashboard](#sso-dashboard) where you find the websites you can access.
+>     * [People.mozilla.org / DinoPark](#people.mozilla.org) the user profile editor.
+>   * [IAM Infrastructure](#iam-infrastructure) how IAM runs.
+
+
+## CIS (Change Integration Service)
+
+Backend which deals with IAM data integration from multiple sources and provides various APIs to CIS (PersonAPI, Change/Person endpoints, well-known endpoint). This includes signing, authorization, profile storage model, publishing code and drivers.
+
+Repositories:
+- https://github.com/mozilla-iam/cis
+- https://github.com/mozilla-iam/cis_functions
+- https://github.com/mozilla-iam/person-api
+- https://github.com/mozilla-iam/gsuite-community-drive-driver
+- https://github.com/mozilla-iam/slack-driver/
+
+
+## IAM User Profile
+
+The IAM user profile utilize by CIS and other modules. It also presents the schema and profile rules on the well-known endpoints.
+
+## Access Provider
+
+Provides OIDC, SAML, WS-FED, etc. connectivity and IdP shadowing for the purpose of providing identity and access management to relying parties. Currently utilizes Auth0 to perform this function. This includes all auth0 related CI, configuration and rule engine.
+
+- Operator: Third party (Auth0)
+
+Repositories:
+- https://github.com/mozilla-iam/auth0-ci/
+- https://github.com/mozilla-iam/auth0-deploy
+- https://github.com/mozilla-iam/authzerolib
+
+## SSO Dashboard
+
+This is the application launcher available at https://sso.mozilla.com.
+
+Repository:
+- https://github.com/mozilla-iam/sso-dashboard
+
+## SSO Dashboard Configuration and Access Control Database
+
+This is the configuration and `apps.yml`.
+
+Repository:
+- https://github.com/mozilla-iam/sso-dashboard-configuration
+
+## New Login Experience (NLX)
+
+This is the login window for _Mozilla IAM_.
+
+Repository:
+- https://github.com/mozilla-iam/auth0-custom-lock
+
+## people.mozilla.org
+
+This is the new place to edit _Mozilla IAM_ profiles, manage groups, search & discover people. It will be available at https://people.mozilla.org (beta at https://people.allizom.community).
+Test environment is: https://dinopark.k8s.test.sso.allizom.org/ development environment is: https://dinopark.k8s.dev.sso.allizom.org
+
+Repositories:
+- https://github.com/mozilla-iam/dino-park-front-end
+- https://github.com/mozilla-iam/dino-park-search
+- https://github.com/mozilla-iam/dino-park-fence
+- https://github.com/mozilla-iam/dino-park-fossil
+- https://github.com/mozilla-iam/dino-park-lookout
+- https://github.com/mozilla-iam/dino-park-tree
+
+## vouches.mozillians.org
+
+Site containing old mozillians.org vouches
+
+Repository:
+- https://github.com/mozilla/mozillians
+
+
+## IAM Infrastructure
+
+The AWS resources used for running many components of IAM.
+
+
+## OpenLDAP
+
+This is the Staff user database, credential storage and group system (IdP). It also contains some non-staff contributors.
+
+## DuoSecurity (2FA)
+
+This is the 2FA/MFA product utilized to augment OpenLDAP with a second-factor.
+
+- Operator: Third party (Duo) 
+
+
 # Links and information
 ## Internal links
 - [Mozilla internal "mana" page](https://mana.mozilla.org/wiki/display/SECURITY/IAM) This contains some internal processes and some legacy documentation.
