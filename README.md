@@ -149,13 +149,20 @@ Repository:
 This is the new place to edit _Mozilla IAM_ profiles, manage groups, search & discover people. It will be available at https://people.mozilla.org (beta at https://people.allizom.community).
 Test environment is: https://dinopark.k8s.test.sso.allizom.org/ development environment is: https://dinopark.k8s.dev.sso.allizom.org
 
-Repositories:
+Repositories (full repository details are [here](https://github.com/mozilla-iam/dino-park/blob/master/Introduction.md)):
 - https://github.com/mozilla-iam/dino-park-front-end
 - https://github.com/mozilla-iam/dino-park-search
 - https://github.com/mozilla-iam/dino-park-fence
 - https://github.com/mozilla-iam/dino-park-fossil
 - https://github.com/mozilla-iam/dino-park-lookout
 - https://github.com/mozilla-iam/dino-park-tree
+- https://github.com/mozilla-iam/dino-park-profile-publisher
+- https://github.com/mozilla-iam/dino-park-whoami
+- https://github.com/mozilla-iam/dino-park-world
+- https://github.com/mozilla-iam/dino-park-packs
+- https://github.com/mozilla-iam/dino-park-guard
+- https://github.com/mozilla-iam/dino-park-oidc
+- https://github.com/mozilla-iam/dino-park-trust
 
 ## vouches.mozillians.org
 
