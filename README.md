@@ -150,12 +150,8 @@ This is the new place to edit _Mozilla IAM_ profiles, manage groups, search & di
 Test environment is: https://dinopark.k8s.test.sso.allizom.org/ development environment is: https://dinopark.k8s.dev.sso.allizom.org
 
 Repositories:
-- https://github.com/mozilla-iam/dino-park-front-end
-- https://github.com/mozilla-iam/dino-park-search
-- https://github.com/mozilla-iam/dino-park-fence
-- https://github.com/mozilla-iam/dino-park-fossil
-- https://github.com/mozilla-iam/dino-park-lookout
-- https://github.com/mozilla-iam/dino-park-tree
+The full list of repositories and what they contain can be found at https://github.com/mozilla-iam/dino-park/blob/master/Introduction.md#repositories
+
 
 ## vouches.mozillians.org
 
