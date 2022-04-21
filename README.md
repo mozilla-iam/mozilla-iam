@@ -81,19 +81,19 @@ be https://discourse.mozilla-community.org/ or https://voice.mozilla.org/
 
 # Components
 
->   * Core functionality
->     * [Access Provider](#access-provider) the glue for everything (Auth0).
->     * [SSO Dashboard Configuration and Access Control Database](#sso-dashboard-configuration-and-access-control-database) where access control is set at the IAM level (additionally to the site's own controls).
->     * [New Login Experience (NLX)](#new-login-experience-nlx) the login panel to login to websites.
->     * [OpenLDAP](#openldap) staff Identity Provider
->     * [DuoSecurity (2FA)](#duosecurity-2fa) staff 2FA
->   * Core APIs
->     * [CIS (Change Integration Service)](#cis-change-integration-service)
->     * [IAM User Profile](#iam-user-profile) the user profile specification.
->   * Websites
->     * [SSO Dashboard](#sso-dashboard) where you find the websites you can access.
->     * [People.mozilla.org / DinoPark](#people.mozilla.org) the user profile editor.
->   * [IAM Infrastructure](#iam-infrastructure) how IAM runs.
+* Core functionality
+ * [Access Provider](#access-provider) the glue for everything (Auth0).
+ * [SSO Dashboard Configuration and Access Control Database](#sso-dashboard-configuration-and-access-control-database) where access control is set at the IAM level (additionally to the site's own controls).
+ * [New Login Experience (NLX)](#new-login-experience-nlx) the login panel to login to websites.
+ * [OpenLDAP](#openldap) staff Identity Provider
+ * [DuoSecurity (2FA)](#duosecurity-2fa) staff 2FA
+* Core APIs
+ * [CIS (Change Integration Service)](#cis-change-integration-service)
+ * [IAM User Profile](#iam-user-profile) the user profile specification.
+* Websites
+ * [SSO Dashboard](#sso-dashboard) where you find the websites you can access.
+ * [People.mozilla.org / DinoPark](#peoplemozillaorg) the user profile editor.
+* [IAM Infrastructure](#iam-infrastructure) how IAM runs.
 
 
 ## CIS (Change Integration Service)
